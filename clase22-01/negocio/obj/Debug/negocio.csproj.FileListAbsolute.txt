@@ -1,0 +1,9 @@
+C:\Users\dalia\source\repos\clase22-02\negocio\bin\Debug\negocio.dll
+C:\Users\dalia\source\repos\clase22-02\negocio\bin\Debug\negocio.pdb
+C:\Users\dalia\source\repos\clase22-02\negocio\bin\Debug\datos.dll
+C:\Users\dalia\source\repos\clase22-02\negocio\bin\Debug\datos.pdb
+C:\Users\dalia\source\repos\clase22-02\negocio\obj\Debug\negocio.csproj.AssemblyReference.cache
+C:\Users\dalia\source\repos\clase22-02\negocio\obj\Debug\negocio.csproj.CoreCompileInputs.cache
+C:\Users\dalia\source\repos\clase22-02\negocio\obj\Debug\negocio.csproj.Up2Date
+C:\Users\dalia\source\repos\clase22-02\negocio\obj\Debug\negocio.dll
+C:\Users\dalia\source\repos\clase22-02\negocio\obj\Debug\negocio.pdb

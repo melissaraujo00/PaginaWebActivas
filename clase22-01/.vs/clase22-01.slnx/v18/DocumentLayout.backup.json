@@ -1,0 +1,156 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\dalia\\source\\repos\\clase22-02\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{9B76865A-EA62-48EB-A97A-E862E9C6F4C7}|presentacion\\presentacion.csproj|c:\\users\\dalia\\source\\repos\\clase22-02\\presentacion\\index.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9B76865A-EA62-48EB-A97A-E862E9C6F4C7}|presentacion\\presentacion.csproj|solutionrelative:presentacion\\index.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{830B7FF2-6653-46BE-B685-2AC3B98A466C}|datos\\datos.csproj|c:\\users\\dalia\\source\\repos\\clase22-02\\datos\\cdpersonas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{830B7FF2-6653-46BE-B685-2AC3B98A466C}|datos\\datos.csproj|solutionrelative:datos\\cdpersonas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{830B7FF2-6653-46BE-B685-2AC3B98A466C}|datos\\datos.csproj|c:\\users\\dalia\\source\\repos\\clase22-02\\datos\\conexion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{830B7FF2-6653-46BE-B685-2AC3B98A466C}|datos\\datos.csproj|solutionrelative:datos\\conexion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9B76865A-EA62-48EB-A97A-E862E9C6F4C7}|presentacion\\presentacion.csproj|c:\\users\\dalia\\source\\repos\\clase22-02\\presentacion\\principal.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{9B76865A-EA62-48EB-A97A-E862E9C6F4C7}|presentacion\\presentacion.csproj|solutionrelative:presentacion\\principal.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{779F2FC3-CE86-4FDF-A29F-2615F13D2A5B}|negocio\\negocio.csproj|c:\\users\\dalia\\source\\repos\\clase22-02\\negocio\\cnpersonas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{779F2FC3-CE86-4FDF-A29F-2615F13D2A5B}|negocio\\negocio.csproj|solutionrelative:negocio\\cnpersonas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9B76865A-EA62-48EB-A97A-E862E9C6F4C7}|presentacion\\presentacion.csproj|c:\\users\\dalia\\source\\repos\\clase22-02\\presentacion\\index.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{9B76865A-EA62-48EB-A97A-E862E9C6F4C7}|presentacion\\presentacion.csproj|solutionrelative:presentacion\\index.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9B76865A-EA62-48EB-A97A-E862E9C6F4C7}|presentacion\\presentacion.csproj|c:\\users\\dalia\\source\\repos\\clase22-02\\presentacion\\index.aspx.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9B76865A-EA62-48EB-A97A-E862E9C6F4C7}|presentacion\\presentacion.csproj|solutionrelative:presentacion\\index.aspx.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9B76865A-EA62-48EB-A97A-E862E9C6F4C7}|presentacion\\presentacion.csproj|c:\\users\\dalia\\source\\repos\\clase22-02\\presentacion\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{9B76865A-EA62-48EB-A97A-E862E9C6F4C7}|presentacion\\presentacion.csproj|solutionrelative:presentacion\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "principal.aspx",
+              "DocumentMoniker": "C:\\Users\\dalia\\source\\repos\\clase22-02\\presentacion\\principal.aspx",
+              "RelativeDocumentMoniker": "presentacion\\principal.aspx",
+              "ToolTip": "C:\\Users\\dalia\\source\\repos\\clase22-02\\presentacion\\principal.aspx",
+              "RelativeToolTip": "presentacion\\principal.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2026-01-27T18:12:28.784Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "index.aspx.designer.cs",
+              "DocumentMoniker": "C:\\Users\\dalia\\source\\repos\\clase22-02\\presentacion\\index.aspx.designer.cs",
+              "RelativeDocumentMoniker": "presentacion\\index.aspx.designer.cs",
+              "ToolTip": "C:\\Users\\dalia\\source\\repos\\clase22-02\\presentacion\\index.aspx.designer.cs",
+              "RelativeToolTip": "presentacion\\index.aspx.designer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-27T18:01:19.182Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "index.aspx.cs",
+              "DocumentMoniker": "C:\\Users\\dalia\\source\\repos\\clase22-02\\presentacion\\index.aspx.cs",
+              "RelativeDocumentMoniker": "presentacion\\index.aspx.cs",
+              "ToolTip": "C:\\Users\\dalia\\source\\repos\\clase22-02\\presentacion\\index.aspx.cs*",
+              "RelativeToolTip": "presentacion\\index.aspx.cs*",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAuwBMAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-27T17:57:38.977Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "CDPersonas.cs",
+              "DocumentMoniker": "C:\\Users\\dalia\\source\\repos\\clase22-02\\datos\\CDPersonas.cs",
+              "RelativeDocumentMoniker": "datos\\CDPersonas.cs",
+              "ToolTip": "C:\\Users\\dalia\\source\\repos\\clase22-02\\datos\\CDPersonas.cs",
+              "RelativeToolTip": "datos\\CDPersonas.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAAABcAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-27T17:51:35.208Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "CNPersonas.cs",
+              "DocumentMoniker": "C:\\Users\\dalia\\source\\repos\\clase22-02\\negocio\\CNPersonas.cs",
+              "RelativeDocumentMoniker": "negocio\\CNPersonas.cs",
+              "ToolTip": "C:\\Users\\dalia\\source\\repos\\clase22-02\\negocio\\CNPersonas.cs",
+              "RelativeToolTip": "negocio\\CNPersonas.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-27T17:31:46.288Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Web.config",
+              "DocumentMoniker": "C:\\Users\\dalia\\source\\repos\\clase22-02\\presentacion\\Web.config",
+              "RelativeDocumentMoniker": "presentacion\\Web.config",
+              "ToolTip": "C:\\Users\\dalia\\source\\repos\\clase22-02\\presentacion\\Web.config",
+              "RelativeToolTip": "presentacion\\Web.config",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2026-01-27T17:04:16.257Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "index.aspx",
+              "DocumentMoniker": "C:\\Users\\dalia\\source\\repos\\clase22-02\\presentacion\\index.aspx",
+              "RelativeDocumentMoniker": "presentacion\\index.aspx",
+              "ToolTip": "C:\\Users\\dalia\\source\\repos\\clase22-02\\presentacion\\index.aspx",
+              "RelativeToolTip": "presentacion\\index.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2026-01-27T04:32:14.631Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Conexion.cs",
+              "DocumentMoniker": "C:\\Users\\dalia\\source\\repos\\clase22-02\\datos\\Conexion.cs",
+              "RelativeDocumentMoniker": "datos\\Conexion.cs",
+              "ToolTip": "C:\\Users\\dalia\\source\\repos\\clase22-02\\datos\\Conexion.cs",
+              "RelativeToolTip": "datos\\Conexion.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAAAAgAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-27T04:30:15.248Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
