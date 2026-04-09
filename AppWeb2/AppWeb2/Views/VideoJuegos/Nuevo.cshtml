@@ -1,0 +1,24 @@
+﻿@model IEnumerable<AppWeb2.Models.VideoJuego>
+@{
+    ViewData["Title"] = "Nuevos Juegos";
+}
+
+<div class="container mt-5">
+    <h2 class="text-center fw-bold mb-4" style="color: #FFD700;">Últimos Lanzamientos</h2>
+
+    @if (!Model.Any())
+    {
+        <div class="alert alert-info text-center">
+            No hay juegos disponibles.
+        </div>
+    }
+    else
+    {
+        <div class="row g-4">
+            @foreach (var juego in Model)
+            {
+                @await Html.PartialAsync("_GameCard", juego)
+            }
+        </div>
+    }
+</div>

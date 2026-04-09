@@ -1,0 +1,653 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\dalia\\source\\repos\\AppWeb2\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{5E9C489E-056B-F73E-D0BD-58AEDB7DE61E}|AppWeb2\\AppWeb2.csproj|c:\\users\\dalia\\source\\repos\\appweb2\\appweb2\\filtros\\sessionauthorize.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5E9C489E-056B-F73E-D0BD-58AEDB7DE61E}|AppWeb2\\AppWeb2.csproj|solutionrelative:appweb2\\filtros\\sessionauthorize.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5E9C489E-056B-F73E-D0BD-58AEDB7DE61E}|AppWeb2\\AppWeb2.csproj|c:\\users\\dalia\\source\\repos\\appweb2\\appweb2\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5E9C489E-056B-F73E-D0BD-58AEDB7DE61E}|AppWeb2\\AppWeb2.csproj|solutionrelative:appweb2\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5E9C489E-056B-F73E-D0BD-58AEDB7DE61E}|AppWeb2\\AppWeb2.csproj|c:\\users\\dalia\\source\\repos\\appweb2\\appweb2\\views\\account\\dashboard.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5E9C489E-056B-F73E-D0BD-58AEDB7DE61E}|AppWeb2\\AppWeb2.csproj|solutionrelative:appweb2\\views\\account\\dashboard.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5E9C489E-056B-F73E-D0BD-58AEDB7DE61E}|AppWeb2\\AppWeb2.csproj|c:\\users\\dalia\\source\\repos\\appweb2\\appweb2\\models\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5E9C489E-056B-F73E-D0BD-58AEDB7DE61E}|AppWeb2\\AppWeb2.csproj|solutionrelative:appweb2\\models\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5E9C489E-056B-F73E-D0BD-58AEDB7DE61E}|AppWeb2\\AppWeb2.csproj|c:\\users\\dalia\\source\\repos\\appweb2\\appweb2\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5E9C489E-056B-F73E-D0BD-58AEDB7DE61E}|AppWeb2\\AppWeb2.csproj|solutionrelative:appweb2\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5E9C489E-056B-F73E-D0BD-58AEDB7DE61E}|AppWeb2\\AppWeb2.csproj|c:\\users\\dalia\\source\\repos\\appweb2\\appweb2\\views\\shared\\_gamecard.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5E9C489E-056B-F73E-D0BD-58AEDB7DE61E}|AppWeb2\\AppWeb2.csproj|solutionrelative:appweb2\\views\\shared\\_gamecard.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5E9C489E-056B-F73E-D0BD-58AEDB7DE61E}|AppWeb2\\AppWeb2.csproj|c:\\users\\dalia\\source\\repos\\appweb2\\appweb2\\views\\account\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5E9C489E-056B-F73E-D0BD-58AEDB7DE61E}|AppWeb2\\AppWeb2.csproj|solutionrelative:appweb2\\views\\account\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5E9C489E-056B-F73E-D0BD-58AEDB7DE61E}|AppWeb2\\AppWeb2.csproj|c:\\users\\dalia\\source\\repos\\appweb2\\appweb2\\views\\categoria\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5E9C489E-056B-F73E-D0BD-58AEDB7DE61E}|AppWeb2\\AppWeb2.csproj|solutionrelative:appweb2\\views\\categoria\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5E9C489E-056B-F73E-D0BD-58AEDB7DE61E}|AppWeb2\\AppWeb2.csproj|c:\\users\\dalia\\source\\repos\\appweb2\\appweb2\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5E9C489E-056B-F73E-D0BD-58AEDB7DE61E}|AppWeb2\\AppWeb2.csproj|solutionrelative:appweb2\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5E9C489E-056B-F73E-D0BD-58AEDB7DE61E}|AppWeb2\\AppWeb2.csproj|c:\\users\\dalia\\source\\repos\\appweb2\\appweb2\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5E9C489E-056B-F73E-D0BD-58AEDB7DE61E}|AppWeb2\\AppWeb2.csproj|solutionrelative:appweb2\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5E9C489E-056B-F73E-D0BD-58AEDB7DE61E}|AppWeb2\\AppWeb2.csproj|c:\\users\\dalia\\source\\repos\\appweb2\\appweb2\\controllers\\videojuegoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5E9C489E-056B-F73E-D0BD-58AEDB7DE61E}|AppWeb2\\AppWeb2.csproj|solutionrelative:appweb2\\controllers\\videojuegoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5E9C489E-056B-F73E-D0BD-58AEDB7DE61E}|AppWeb2\\AppWeb2.csproj|c:\\users\\dalia\\source\\repos\\appweb2\\appweb2\\controllers\\categoriacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5E9C489E-056B-F73E-D0BD-58AEDB7DE61E}|AppWeb2\\AppWeb2.csproj|solutionrelative:appweb2\\controllers\\categoriacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5E9C489E-056B-F73E-D0BD-58AEDB7DE61E}|AppWeb2\\AppWeb2.csproj|c:\\users\\dalia\\source\\repos\\appweb2\\appweb2\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5E9C489E-056B-F73E-D0BD-58AEDB7DE61E}|AppWeb2\\AppWeb2.csproj|solutionrelative:appweb2\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5E9C489E-056B-F73E-D0BD-58AEDB7DE61E}|AppWeb2\\AppWeb2.csproj|c:\\users\\dalia\\source\\repos\\appweb2\\appweb2\\views\\shared\\_featurecards.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5E9C489E-056B-F73E-D0BD-58AEDB7DE61E}|AppWeb2\\AppWeb2.csproj|solutionrelative:appweb2\\views\\shared\\_featurecards.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5E9C489E-056B-F73E-D0BD-58AEDB7DE61E}|AppWeb2\\AppWeb2.csproj|c:\\users\\dalia\\source\\repos\\appweb2\\appweb2\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{5E9C489E-056B-F73E-D0BD-58AEDB7DE61E}|AppWeb2\\AppWeb2.csproj|solutionrelative:appweb2\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5E9C489E-056B-F73E-D0BD-58AEDB7DE61E}|AppWeb2\\AppWeb2.csproj|c:\\users\\dalia\\source\\repos\\appweb2\\appweb2\\views\\videojuegos\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5E9C489E-056B-F73E-D0BD-58AEDB7DE61E}|AppWeb2\\AppWeb2.csproj|solutionrelative:appweb2\\views\\videojuegos\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5E9C489E-056B-F73E-D0BD-58AEDB7DE61E}|AppWeb2\\AppWeb2.csproj|c:\\users\\dalia\\source\\repos\\appweb2\\appweb2\\appweb2.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{5E9C489E-056B-F73E-D0BD-58AEDB7DE61E}|AppWeb2\\AppWeb2.csproj|solutionrelative:appweb2\\appweb2.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5E9C489E-056B-F73E-D0BD-58AEDB7DE61E}|AppWeb2\\AppWeb2.csproj|c:\\users\\dalia\\source\\repos\\appweb2\\appweb2\\views\\videojuegos\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5E9C489E-056B-F73E-D0BD-58AEDB7DE61E}|AppWeb2\\AppWeb2.csproj|solutionrelative:appweb2\\views\\videojuegos\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5E9C489E-056B-F73E-D0BD-58AEDB7DE61E}|AppWeb2\\AppWeb2.csproj|c:\\users\\dalia\\source\\repos\\appweb2\\appweb2\\views\\videojuegos\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5E9C489E-056B-F73E-D0BD-58AEDB7DE61E}|AppWeb2\\AppWeb2.csproj|solutionrelative:appweb2\\views\\videojuegos\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5E9C489E-056B-F73E-D0BD-58AEDB7DE61E}|AppWeb2\\AppWeb2.csproj|c:\\users\\dalia\\source\\repos\\appweb2\\appweb2\\views\\videojuegos\\promocion.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5E9C489E-056B-F73E-D0BD-58AEDB7DE61E}|AppWeb2\\AppWeb2.csproj|solutionrelative:appweb2\\views\\videojuegos\\promocion.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5E9C489E-056B-F73E-D0BD-58AEDB7DE61E}|AppWeb2\\AppWeb2.csproj|c:\\users\\dalia\\source\\repos\\appweb2\\appweb2\\views\\videojuegos\\nuevo.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5E9C489E-056B-F73E-D0BD-58AEDB7DE61E}|AppWeb2\\AppWeb2.csproj|solutionrelative:appweb2\\views\\videojuegos\\nuevo.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5E9C489E-056B-F73E-D0BD-58AEDB7DE61E}|AppWeb2\\AppWeb2.csproj|c:\\users\\dalia\\source\\repos\\appweb2\\appweb2\\views\\videojuegos\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5E9C489E-056B-F73E-D0BD-58AEDB7DE61E}|AppWeb2\\AppWeb2.csproj|solutionrelative:appweb2\\views\\videojuegos\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5E9C489E-056B-F73E-D0BD-58AEDB7DE61E}|AppWeb2\\AppWeb2.csproj|c:\\users\\dalia\\source\\repos\\appweb2\\appweb2\\views\\categoria\\juegosporcategoria.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5E9C489E-056B-F73E-D0BD-58AEDB7DE61E}|AppWeb2\\AppWeb2.csproj|solutionrelative:appweb2\\views\\categoria\\juegosporcategoria.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5E9C489E-056B-F73E-D0BD-58AEDB7DE61E}|AppWeb2\\AppWeb2.csproj|c:\\users\\dalia\\source\\repos\\appweb2\\appweb2\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5E9C489E-056B-F73E-D0BD-58AEDB7DE61E}|AppWeb2\\AppWeb2.csproj|solutionrelative:appweb2\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5E9C489E-056B-F73E-D0BD-58AEDB7DE61E}|AppWeb2\\AppWeb2.csproj|c:\\users\\dalia\\source\\repos\\appweb2\\appweb2\\models\\videojuego.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5E9C489E-056B-F73E-D0BD-58AEDB7DE61E}|AppWeb2\\AppWeb2.csproj|solutionrelative:appweb2\\models\\videojuego.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5E9C489E-056B-F73E-D0BD-58AEDB7DE61E}|AppWeb2\\AppWeb2.csproj|c:\\users\\dalia\\source\\repos\\appweb2\\appweb2\\models\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5E9C489E-056B-F73E-D0BD-58AEDB7DE61E}|AppWeb2\\AppWeb2.csproj|solutionrelative:appweb2\\models\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5E9C489E-056B-F73E-D0BD-58AEDB7DE61E}|AppWeb2\\AppWeb2.csproj|c:\\users\\dalia\\source\\repos\\appweb2\\appweb2\\data\\tiendacontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5E9C489E-056B-F73E-D0BD-58AEDB7DE61E}|AppWeb2\\AppWeb2.csproj|solutionrelative:appweb2\\data\\tiendacontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\dalia\\source\\repos\\AppWeb2\\AppWeb2\\Migrations\\20260325040707_Inicial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:AppWeb2\\Migrations\\20260325040707_Inicial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5E9C489E-056B-F73E-D0BD-58AEDB7DE61E}|AppWeb2\\AppWeb2.csproj|c:\\users\\dalia\\source\\repos\\appweb2\\appweb2\\models\\categoria.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5E9C489E-056B-F73E-D0BD-58AEDB7DE61E}|AppWeb2\\AppWeb2.csproj|solutionrelative:appweb2\\models\\categoria.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5E9C489E-056B-F73E-D0BD-58AEDB7DE61E}|AppWeb2\\AppWeb2.csproj|c:\\users\\dalia\\source\\repos\\appweb2\\appweb2\\models\\compra.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5E9C489E-056B-F73E-D0BD-58AEDB7DE61E}|AppWeb2\\AppWeb2.csproj|solutionrelative:appweb2\\models\\compra.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5E9C489E-056B-F73E-D0BD-58AEDB7DE61E}|AppWeb2\\AppWeb2.csproj|c:\\users\\dalia\\source\\repos\\appweb2\\appweb2\\models\\notas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5E9C489E-056B-F73E-D0BD-58AEDB7DE61E}|AppWeb2\\AppWeb2.csproj|solutionrelative:appweb2\\models\\notas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5E9C489E-056B-F73E-D0BD-58AEDB7DE61E}|AppWeb2\\AppWeb2.csproj|c:\\users\\dalia\\source\\repos\\appweb2\\appweb2\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5E9C489E-056B-F73E-D0BD-58AEDB7DE61E}|AppWeb2\\AppWeb2.csproj|solutionrelative:appweb2\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5E9C489E-056B-F73E-D0BD-58AEDB7DE61E}|AppWeb2\\AppWeb2.csproj|c:\\users\\dalia\\source\\repos\\appweb2\\appweb2\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5E9C489E-056B-F73E-D0BD-58AEDB7DE61E}|AppWeb2\\AppWeb2.csproj|solutionrelative:appweb2\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5E9C489E-056B-F73E-D0BD-58AEDB7DE61E}|AppWeb2\\AppWeb2.csproj|c:\\users\\dalia\\source\\repos\\appweb2\\appweb2\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{5E9C489E-056B-F73E-D0BD-58AEDB7DE61E}|AppWeb2\\AppWeb2.csproj|solutionrelative:appweb2\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5E9C489E-056B-F73E-D0BD-58AEDB7DE61E}|AppWeb2\\AppWeb2.csproj|c:\\users\\dalia\\source\\repos\\appweb2\\appweb2\\views\\home\\contactos.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5E9C489E-056B-F73E-D0BD-58AEDB7DE61E}|AppWeb2\\AppWeb2.csproj|solutionrelative:appweb2\\views\\home\\contactos.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5E9C489E-056B-F73E-D0BD-58AEDB7DE61E}|AppWeb2\\AppWeb2.csproj|c:\\users\\dalia\\source\\repos\\appweb2\\appweb2\\views\\home\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5E9C489E-056B-F73E-D0BD-58AEDB7DE61E}|AppWeb2\\AppWeb2.csproj|solutionrelative:appweb2\\views\\home\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5E9C489E-056B-F73E-D0BD-58AEDB7DE61E}|AppWeb2\\AppWeb2.csproj|c:\\users\\dalia\\source\\repos\\appweb2\\appweb2\\views\\shared\\ejemploplantilla.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5E9C489E-056B-F73E-D0BD-58AEDB7DE61E}|AppWeb2\\AppWeb2.csproj|solutionrelative:appweb2\\views\\shared\\ejemploplantilla.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5E9C489E-056B-F73E-D0BD-58AEDB7DE61E}|AppWeb2\\AppWeb2.csproj|c:\\users\\dalia\\source\\repos\\appweb2\\appweb2\\migrations\\20260325042834_inicial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5E9C489E-056B-F73E-D0BD-58AEDB7DE61E}|AppWeb2\\AppWeb2.csproj|solutionrelative:appweb2\\migrations\\20260325042834_inicial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "SessionAuthorize.cs",
+              "DocumentMoniker": "C:\\Users\\dalia\\source\\repos\\AppWeb2\\AppWeb2\\Filtros\\SessionAuthorize.cs",
+              "RelativeDocumentMoniker": "AppWeb2\\Filtros\\SessionAuthorize.cs",
+              "ToolTip": "C:\\Users\\dalia\\source\\repos\\AppWeb2\\AppWeb2\\Filtros\\SessionAuthorize.cs",
+              "RelativeToolTip": "AppWeb2\\Filtros\\SessionAuthorize.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-09T01:57:11.314Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Dashboard.cshtml",
+              "DocumentMoniker": "C:\\Users\\dalia\\source\\repos\\AppWeb2\\AppWeb2\\Views\\Account\\Dashboard.cshtml",
+              "RelativeDocumentMoniker": "AppWeb2\\Views\\Account\\Dashboard.cshtml",
+              "ToolTip": "C:\\Users\\dalia\\source\\repos\\AppWeb2\\AppWeb2\\Views\\Account\\Dashboard.cshtml",
+              "RelativeToolTip": "AppWeb2\\Views\\Account\\Dashboard.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFoAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-04-09T01:51:43.121Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Login.cshtml",
+              "DocumentMoniker": "C:\\Users\\dalia\\source\\repos\\AppWeb2\\AppWeb2\\Views\\Account\\Login.cshtml",
+              "RelativeDocumentMoniker": "AppWeb2\\Views\\Account\\Login.cshtml",
+              "ToolTip": "C:\\Users\\dalia\\source\\repos\\AppWeb2\\AppWeb2\\Views\\Account\\Login.cshtml",
+              "RelativeToolTip": "AppWeb2\\Views\\Account\\Login.cshtml",
+              "ViewState": "AgIAACoAAAAAAAAAAAAAADwAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-04-09T01:20:16.29Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Login.cs",
+              "DocumentMoniker": "C:\\Users\\dalia\\source\\repos\\AppWeb2\\AppWeb2\\Models\\Login.cs",
+              "RelativeDocumentMoniker": "AppWeb2\\Models\\Login.cs",
+              "ToolTip": "C:\\Users\\dalia\\source\\repos\\AppWeb2\\AppWeb2\\Models\\Login.cs",
+              "RelativeToolTip": "AppWeb2\\Models\\Login.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-19T17:18:42.761Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AccountController.cs",
+              "DocumentMoniker": "C:\\Users\\dalia\\source\\repos\\AppWeb2\\AppWeb2\\Controllers\\AccountController.cs",
+              "RelativeDocumentMoniker": "AppWeb2\\Controllers\\AccountController.cs",
+              "ToolTip": "C:\\Users\\dalia\\source\\repos\\AppWeb2\\AppWeb2\\Controllers\\AccountController.cs",
+              "RelativeToolTip": "AppWeb2\\Controllers\\AccountController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-19T17:32:23.117Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\dalia\\source\\repos\\AppWeb2\\AppWeb2\\Views\\Account\\Index.cshtml",
+              "RelativeDocumentMoniker": "AppWeb2\\Views\\Account\\Index.cshtml",
+              "ToolTip": "C:\\Users\\dalia\\source\\repos\\AppWeb2\\AppWeb2\\Views\\Account\\Index.cshtml",
+              "RelativeToolTip": "AppWeb2\\Views\\Account\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-03-19T17:14:56.541Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\dalia\\source\\repos\\AppWeb2\\AppWeb2\\Views\\Categoria\\Index.cshtml",
+              "RelativeDocumentMoniker": "AppWeb2\\Views\\Categoria\\Index.cshtml",
+              "ToolTip": "C:\\Users\\dalia\\source\\repos\\AppWeb2\\AppWeb2\\Views\\Categoria\\Index.cshtml",
+              "RelativeToolTip": "AppWeb2\\Views\\Categoria\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-03-25T04:02:13.138Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "_GameCard.cshtml",
+              "DocumentMoniker": "C:\\Users\\dalia\\source\\repos\\AppWeb2\\AppWeb2\\Views\\Shared\\_GameCard.cshtml",
+              "RelativeDocumentMoniker": "AppWeb2\\Views\\Shared\\_GameCard.cshtml",
+              "ToolTip": "C:\\Users\\dalia\\source\\repos\\AppWeb2\\AppWeb2\\Views\\Shared\\_GameCard.cshtml",
+              "RelativeToolTip": "AppWeb2\\Views\\Shared\\_GameCard.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFAAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-03-23T18:07:42.694Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\dalia\\source\\repos\\AppWeb2\\AppWeb2\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "AppWeb2\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\dalia\\source\\repos\\AppWeb2\\AppWeb2\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "AppWeb2\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAABQAAAAAAAAAAAAYwEEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-02-12T17:51:16.595Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\dalia\\source\\repos\\AppWeb2\\AppWeb2\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "AppWeb2\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\dalia\\source\\repos\\AppWeb2\\AppWeb2\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "AppWeb2\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAAwBkAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-12T17:49:33.127Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "C:\\Users\\dalia\\source\\repos\\AppWeb2\\AppWeb2\\Views\\VideoJuegos\\Edit.cshtml",
+              "RelativeDocumentMoniker": "AppWeb2\\Views\\VideoJuegos\\Edit.cshtml",
+              "ToolTip": "C:\\Users\\dalia\\source\\repos\\AppWeb2\\AppWeb2\\Views\\VideoJuegos\\Edit.cshtml",
+              "RelativeToolTip": "AppWeb2\\Views\\VideoJuegos\\Edit.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-02-26T17:45:42.251Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "VideoJuegosController.cs",
+              "DocumentMoniker": "C:\\Users\\dalia\\source\\repos\\AppWeb2\\AppWeb2\\Controllers\\VideoJuegosController.cs",
+              "RelativeDocumentMoniker": "AppWeb2\\Controllers\\VideoJuegosController.cs",
+              "ToolTip": "C:\\Users\\dalia\\source\\repos\\AppWeb2\\AppWeb2\\Controllers\\VideoJuegosController.cs",
+              "RelativeToolTip": "AppWeb2\\Controllers\\VideoJuegosController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFIAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-26T17:43:55.147Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "CategoriaController.cs",
+              "DocumentMoniker": "C:\\Users\\dalia\\source\\repos\\AppWeb2\\AppWeb2\\Controllers\\CategoriaController.cs",
+              "RelativeDocumentMoniker": "AppWeb2\\Controllers\\CategoriaController.cs",
+              "ToolTip": "C:\\Users\\dalia\\source\\repos\\AppWeb2\\AppWeb2\\Controllers\\CategoriaController.cs",
+              "RelativeToolTip": "AppWeb2\\Controllers\\CategoriaController.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAAwBoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-25T03:57:17.739Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "site.css",
+              "DocumentMoniker": "C:\\Users\\dalia\\source\\repos\\AppWeb2\\AppWeb2\\wwwroot\\css\\site.css",
+              "RelativeDocumentMoniker": "AppWeb2\\wwwroot\\css\\site.css",
+              "ToolTip": "C:\\Users\\dalia\\source\\repos\\AppWeb2\\AppWeb2\\wwwroot\\css\\site.css",
+              "RelativeToolTip": "AppWeb2\\wwwroot\\css\\site.css",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAPQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2026-03-19T16:55:37.944Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\dalia\\source\\repos\\AppWeb2\\AppWeb2\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "AppWeb2\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\dalia\\source\\repos\\AppWeb2\\AppWeb2\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "AppWeb2\\Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-02-12T17:49:54.653Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "_FeatureCards.cshtml",
+              "DocumentMoniker": "C:\\Users\\dalia\\source\\repos\\AppWeb2\\AppWeb2\\Views\\Shared\\_FeatureCards.cshtml",
+              "RelativeDocumentMoniker": "AppWeb2\\Views\\Shared\\_FeatureCards.cshtml",
+              "ToolTip": "C:\\Users\\dalia\\source\\repos\\AppWeb2\\AppWeb2\\Views\\Shared\\_FeatureCards.cshtml",
+              "RelativeToolTip": "AppWeb2\\Views\\Shared\\_FeatureCards.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-03-23T18:08:43.32Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "AppWeb2.csproj",
+              "DocumentMoniker": "C:\\Users\\dalia\\source\\repos\\AppWeb2\\AppWeb2\\AppWeb2.csproj",
+              "RelativeDocumentMoniker": "AppWeb2\\AppWeb2.csproj",
+              "ToolTip": "C:\\Users\\dalia\\source\\repos\\AppWeb2\\AppWeb2\\AppWeb2.csproj",
+              "RelativeToolTip": "AppWeb2\\AppWeb2.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-02-19T02:43:49.251Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\dalia\\source\\repos\\AppWeb2\\AppWeb2\\Views\\VideoJuegos\\Index.cshtml",
+              "RelativeDocumentMoniker": "AppWeb2\\Views\\VideoJuegos\\Index.cshtml",
+              "ToolTip": "C:\\Users\\dalia\\source\\repos\\AppWeb2\\AppWeb2\\Views\\VideoJuegos\\Index.cshtml",
+              "RelativeToolTip": "AppWeb2\\Views\\VideoJuegos\\Index.cshtml",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-02-26T17:44:54.324Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\dalia\\source\\repos\\AppWeb2\\AppWeb2\\Views\\VideoJuegos\\Create.cshtml",
+              "RelativeDocumentMoniker": "AppWeb2\\Views\\VideoJuegos\\Create.cshtml",
+              "ToolTip": "C:\\Users\\dalia\\source\\repos\\AppWeb2\\AppWeb2\\Views\\VideoJuegos\\Create.cshtml",
+              "RelativeToolTip": "AppWeb2\\Views\\VideoJuegos\\Create.cshtml",
+              "ViewState": "AgIAABsAAAAAAAAAAAAAAAMAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-02-26T17:45:09.058Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "Promocion.cshtml",
+              "DocumentMoniker": "C:\\Users\\dalia\\source\\repos\\AppWeb2\\AppWeb2\\Views\\VideoJuegos\\Promocion.cshtml",
+              "RelativeDocumentMoniker": "AppWeb2\\Views\\VideoJuegos\\Promocion.cshtml",
+              "ToolTip": "C:\\Users\\dalia\\source\\repos\\AppWeb2\\AppWeb2\\Views\\VideoJuegos\\Promocion.cshtml",
+              "RelativeToolTip": "AppWeb2\\Views\\VideoJuegos\\Promocion.cshtml",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAkAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-03-25T05:06:38.694Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "Nuevo.cshtml",
+              "DocumentMoniker": "C:\\Users\\dalia\\source\\repos\\AppWeb2\\AppWeb2\\Views\\VideoJuegos\\Nuevo.cshtml",
+              "RelativeDocumentMoniker": "AppWeb2\\Views\\VideoJuegos\\Nuevo.cshtml",
+              "ToolTip": "C:\\Users\\dalia\\source\\repos\\AppWeb2\\AppWeb2\\Views\\VideoJuegos\\Nuevo.cshtml",
+              "RelativeToolTip": "AppWeb2\\Views\\VideoJuegos\\Nuevo.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-03-25T04:38:23.455Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "Delete.cshtml",
+              "DocumentMoniker": "C:\\Users\\dalia\\source\\repos\\AppWeb2\\AppWeb2\\Views\\VideoJuegos\\Delete.cshtml",
+              "RelativeDocumentMoniker": "AppWeb2\\Views\\VideoJuegos\\Delete.cshtml",
+              "ToolTip": "C:\\Users\\dalia\\source\\repos\\AppWeb2\\AppWeb2\\Views\\VideoJuegos\\Delete.cshtml",
+              "RelativeToolTip": "AppWeb2\\Views\\VideoJuegos\\Delete.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-02-26T17:46:01.619Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "JuegosPorCategoria.cshtml",
+              "DocumentMoniker": "C:\\Users\\dalia\\source\\repos\\AppWeb2\\AppWeb2\\Views\\Categoria\\JuegosPorCategoria.cshtml",
+              "RelativeDocumentMoniker": "AppWeb2\\Views\\Categoria\\JuegosPorCategoria.cshtml",
+              "ToolTip": "C:\\Users\\dalia\\source\\repos\\AppWeb2\\AppWeb2\\Views\\Categoria\\JuegosPorCategoria.cshtml",
+              "RelativeToolTip": "AppWeb2\\Views\\Categoria\\JuegosPorCategoria.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-03-26T04:06:29.075Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "_ViewImports.cshtml",
+              "DocumentMoniker": "C:\\Users\\dalia\\source\\repos\\AppWeb2\\AppWeb2\\Views\\_ViewImports.cshtml",
+              "RelativeDocumentMoniker": "AppWeb2\\Views\\_ViewImports.cshtml",
+              "ToolTip": "C:\\Users\\dalia\\source\\repos\\AppWeb2\\AppWeb2\\Views\\_ViewImports.cshtml",
+              "RelativeToolTip": "AppWeb2\\Views\\_ViewImports.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-03-25T05:10:23.489Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "VideoJuego.cs",
+              "DocumentMoniker": "C:\\Users\\dalia\\source\\repos\\AppWeb2\\AppWeb2\\Models\\VideoJuego.cs",
+              "RelativeDocumentMoniker": "AppWeb2\\Models\\VideoJuego.cs",
+              "ToolTip": "C:\\Users\\dalia\\source\\repos\\AppWeb2\\AppWeb2\\Models\\VideoJuego.cs",
+              "RelativeToolTip": "AppWeb2\\Models\\VideoJuego.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAAqwCsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-19T02:39:24.595Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "20260325042834_Inicial.cs",
+              "DocumentMoniker": "C:\\Users\\dalia\\source\\repos\\AppWeb2\\AppWeb2\\Migrations\\20260325042834_Inicial.cs",
+              "RelativeDocumentMoniker": "AppWeb2\\Migrations\\20260325042834_Inicial.cs",
+              "ToolTip": "C:\\Users\\dalia\\source\\repos\\AppWeb2\\AppWeb2\\Migrations\\20260325042834_Inicial.cs",
+              "RelativeToolTip": "AppWeb2\\Migrations\\20260325042834_Inicial.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-25T04:28:34.304Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "TiendaContext.cs",
+              "DocumentMoniker": "C:\\Users\\dalia\\source\\repos\\AppWeb2\\AppWeb2\\Data\\TiendaContext.cs",
+              "RelativeDocumentMoniker": "AppWeb2\\Data\\TiendaContext.cs",
+              "ToolTip": "C:\\Users\\dalia\\source\\repos\\AppWeb2\\AppWeb2\\Data\\TiendaContext.cs",
+              "RelativeToolTip": "AppWeb2\\Data\\TiendaContext.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAAwCIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-19T03:00:23.949Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "Usuario.cs",
+              "DocumentMoniker": "C:\\Users\\dalia\\source\\repos\\AppWeb2\\AppWeb2\\Models\\Usuario.cs",
+              "RelativeDocumentMoniker": "AppWeb2\\Models\\Usuario.cs",
+              "ToolTip": "C:\\Users\\dalia\\source\\repos\\AppWeb2\\AppWeb2\\Models\\Usuario.cs",
+              "RelativeToolTip": "AppWeb2\\Models\\Usuario.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAkwBcAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-19T02:29:29.571Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "20260325040707_Inicial.cs",
+              "DocumentMoniker": "C:\\Users\\dalia\\source\\repos\\AppWeb2\\AppWeb2\\Migrations\\20260325040707_Inicial.cs",
+              "RelativeDocumentMoniker": "AppWeb2\\Migrations\\20260325040707_Inicial.cs",
+              "ToolTip": "C:\\Users\\dalia\\source\\repos\\AppWeb2\\AppWeb2\\Migrations\\20260325040707_Inicial.cs",
+              "RelativeToolTip": "AppWeb2\\Migrations\\20260325040707_Inicial.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-25T04:07:07.951Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "Categoria.cs",
+              "DocumentMoniker": "C:\\Users\\dalia\\source\\repos\\AppWeb2\\AppWeb2\\Models\\Categoria.cs",
+              "RelativeDocumentMoniker": "AppWeb2\\Models\\Categoria.cs",
+              "ToolTip": "C:\\Users\\dalia\\source\\repos\\AppWeb2\\AppWeb2\\Models\\Categoria.cs",
+              "RelativeToolTip": "AppWeb2\\Models\\Categoria.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-21T14:15:24.629Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "Notas.cs",
+              "DocumentMoniker": "C:\\Users\\dalia\\source\\repos\\AppWeb2\\AppWeb2\\Models\\Notas.cs",
+              "RelativeDocumentMoniker": "AppWeb2\\Models\\Notas.cs",
+              "ToolTip": "C:\\Users\\dalia\\source\\repos\\AppWeb2\\AppWeb2\\Models\\Notas.cs",
+              "RelativeToolTip": "AppWeb2\\Models\\Notas.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-24T17:38:29.638Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "Compra.cs",
+              "DocumentMoniker": "C:\\Users\\dalia\\source\\repos\\AppWeb2\\AppWeb2\\Models\\Compra.cs",
+              "RelativeDocumentMoniker": "AppWeb2\\Models\\Compra.cs",
+              "ToolTip": "C:\\Users\\dalia\\source\\repos\\AppWeb2\\AppWeb2\\Models\\Compra.cs",
+              "RelativeToolTip": "AppWeb2\\Models\\Compra.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwBMAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-19T02:24:39.951Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\dalia\\source\\repos\\AppWeb2\\AppWeb2\\appsettings.json",
+              "RelativeDocumentMoniker": "AppWeb2\\appsettings.json",
+              "ToolTip": "C:\\Users\\dalia\\source\\repos\\AppWeb2\\AppWeb2\\appsettings.json",
+              "RelativeToolTip": "AppWeb2\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-02-19T03:05:08.125Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "_ViewStart.cshtml",
+              "DocumentMoniker": "C:\\Users\\dalia\\source\\repos\\AppWeb2\\AppWeb2\\Views\\_ViewStart.cshtml",
+              "RelativeDocumentMoniker": "AppWeb2\\Views\\_ViewStart.cshtml",
+              "ToolTip": "C:\\Users\\dalia\\source\\repos\\AppWeb2\\AppWeb2\\Views\\_ViewStart.cshtml",
+              "RelativeToolTip": "AppWeb2\\Views\\_ViewStart.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-02-24T17:10:49.354Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\dalia\\source\\repos\\AppWeb2\\AppWeb2\\Program.cs",
+              "RelativeDocumentMoniker": "AppWeb2\\Program.cs",
+              "ToolTip": "C:\\Users\\dalia\\source\\repos\\AppWeb2\\AppWeb2\\Program.cs",
+              "RelativeToolTip": "AppWeb2\\Program.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAiwB4AAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-19T03:04:51.521Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "EjemploPlantilla.cshtml",
+              "DocumentMoniker": "C:\\Users\\dalia\\source\\repos\\AppWeb2\\AppWeb2\\Views\\Shared\\EjemploPlantilla.cshtml",
+              "RelativeDocumentMoniker": "AppWeb2\\Views\\Shared\\EjemploPlantilla.cshtml",
+              "ToolTip": "C:\\Users\\dalia\\source\\repos\\AppWeb2\\AppWeb2\\Views\\Shared\\EjemploPlantilla.cshtml",
+              "RelativeToolTip": "AppWeb2\\Views\\Shared\\EjemploPlantilla.cshtml",
+              "ViewState": "AgIAACQAAAAAAAAAAAAAAEkAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-02-24T17:10:23.591Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "Privacy.cshtml",
+              "DocumentMoniker": "C:\\Users\\dalia\\source\\repos\\AppWeb2\\AppWeb2\\Views\\Home\\Privacy.cshtml",
+              "RelativeDocumentMoniker": "AppWeb2\\Views\\Home\\Privacy.cshtml",
+              "ToolTip": "C:\\Users\\dalia\\source\\repos\\AppWeb2\\AppWeb2\\Views\\Home\\Privacy.cshtml",
+              "RelativeToolTip": "AppWeb2\\Views\\Home\\Privacy.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-02-12T17:53:45.06Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "Contactos.cshtml",
+              "DocumentMoniker": "C:\\Users\\dalia\\source\\repos\\AppWeb2\\AppWeb2\\Views\\Home\\Contactos.cshtml",
+              "RelativeDocumentMoniker": "AppWeb2\\Views\\Home\\Contactos.cshtml",
+              "ToolTip": "C:\\Users\\dalia\\source\\repos\\AppWeb2\\AppWeb2\\Views\\Home\\Contactos.cshtml",
+              "RelativeToolTip": "AppWeb2\\Views\\Home\\Contactos.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-02-12T17:53:33.775Z"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

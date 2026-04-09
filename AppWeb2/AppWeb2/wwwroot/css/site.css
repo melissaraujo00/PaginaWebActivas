@@ -1,0 +1,244 @@
+/* ========== NUEVA PALETA – MODERNA / GAMING ========== */
+:root {
+    --bg-dark: #0a0c15;
+    --surface-dark: #111827;
+    --card-bg: #1f2937;
+    --text-light: #f3f4f6;
+    --text-muted: #9ca3af;
+    --primary: #8b5cf6;
+    --primary-dark: #6d28d9;
+    --secondary: #06b6d4;
+    --accent-hover: #c084fc;
+    --danger: #f43f5e;
+    --badge-gradient: linear-gradient(135deg, #f97316, #dc2626);
+    --shadow-sm: 0 4px 12px rgba(0, 0, 0, 0.3);
+    --shadow-hover: 0 12px 24px rgba(139, 92, 246, 0.25);
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--bg-dark);
+    color: var(--text-light);
+    font-family: 'Segoe UI', system-ui, 'Inter', sans-serif;
+}
+
+/* ========== NAVBAR ========== */
+.navbar-custom {
+    background-color: var(--surface-dark);
+    border-bottom: 1px solid rgba(139, 92, 246, 0.2);
+    box-shadow: var(--shadow-sm);
+}
+
+    .navbar-custom .nav-link {
+        color: var(--text-light);
+        font-size: 1.2rem;
+        transition: 0.3s;
+        font-weight: 500;
+    }
+
+        .navbar-custom .nav-link:hover {
+            color: var(--primary);
+            text-shadow: 0 0 5px rgba(139, 92, 246, 0.5);
+        }
+
+.navbar-brand {
+    font-size: 2rem;
+    font-weight: 700;
+    background: linear-gradient(135deg, var(--primary), var(--secondary));
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent !important;
+}
+
+/* ========== BOTÓN PRINCIPAL ========== */
+.btn-accent {
+    background: linear-gradient(95deg, var(--primary), var(--secondary));
+    color: white;
+    border-radius: 40px;
+    padding: 6px 20px;
+    transition: 0.3s;
+    font-weight: 600;
+    border: none;
+    box-shadow: 0 2px 8px rgba(139, 92, 246, 0.3);
+}
+
+    .btn-accent:hover {
+        background: linear-gradient(95deg, var(--primary-dark), var(--primary));
+        transform: translateY(-2px);
+        box-shadow: 0 6px 14px rgba(139, 92, 246, 0.5);
+        color: white;
+    }
+
+/* ========== BANNER – ANCHO COMPLETO ========== */
+.banner {
+    background: linear-gradient(120deg, rgba(10, 12, 21, 0.85), rgba(17, 24, 39, 0.9)), url('/img/banner.png');
+    background-size: cover;
+    background-position: center top;
+    background-blend-mode: overlay;
+    /* Eliminamos padding vertical excesivo y usamos min-height */
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid rgba(139, 92, 246, 0.2);
+    /* Si no hay contenido interno, puedes dejar así */
+}
+
+/* ========== TARJETAS DE JUEGOS ========== */
+.game-card {
+    border-radius: 20px;
+    overflow: hidden;
+    background-color: var(--card-bg);
+    position: relative;
+    transition: 0.3s ease;
+    border: 1px solid rgba(139, 92, 246, 0.2);
+    backdrop-filter: blur(2px);
+}
+
+    .game-card:hover {
+        transform: translateY(-8px);
+        box-shadow: var(--shadow-hover);
+        border-color: var(--primary);
+    }
+
+.game-img {
+    height: 220px;
+    object-fit: cover;
+    transition: 0.4s;
+}
+
+.game-card:hover .game-img {
+    transform: scale(1.03);
+}
+
+/* Badge de oferta / novedad */
+.badge-top {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    background: var(--badge-gradient);
+    color: white;
+    padding: 4px 14px;
+    font-weight: bold;
+    border-radius: 30px;
+    font-size: 0.8rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    z-index: 2;
+}
+
+/* Corazón de favorito */
+.favorite {
+    position: absolute;
+    bottom: 12px;
+    right: 12px;
+    font-size: 24px;
+    color: var(--danger);
+    cursor: pointer;
+    filter: drop-shadow(0 0 2px rgba(0,0,0,0.5));
+    transition: 0.2s;
+    z-index: 2;
+}
+
+    .favorite:hover {
+        transform: scale(1.1);
+        color: #ff758f;
+    }
+
+/* ========== PRECIO – UNIFICADO ========== */
+.price {
+    color: var(--secondary);
+    font-weight: 800;
+    font-size: 1.2rem;
+}
+
+/* Precio original tachado (en oferta) */
+.game-card .text-muted.text-decoration-line-through {
+    color: #6b7280 !important;
+    font-size: 0.95rem;
+    text-decoration-thickness: 2px;
+}
+
+/* Precio con descuento (si usas .price.text-danger) */
+.game-card .price.text-danger {
+    color: var(--secondary) !important; /* mantenemos el cian */
+}
+
+/* ========== FOOTER ========== */
+.footer-custom {
+    background-color: var(--surface-dark);
+    color: var(--text-muted);
+    margin-top: auto;
+    border-top: 1px solid rgba(139, 92, 246, 0.2);
+    padding: 2rem 0;
+}
+
+    .footer-custom a {
+        color: var(--text-muted);
+        transition: 0.2s;
+    }
+
+        .footer-custom a:hover {
+            color: var(--primary);
+            text-decoration: none;
+        }
+
+/* ========== TARJETAS DE CARACTERÍSTICAS ========== */
+.feature-card {
+    background-color: var(--card-bg);
+    color: var(--text-light);
+    padding: 28px 20px;
+    border-radius: 24px;
+    transition: 0.25s;
+    cursor: pointer;
+    text-align: center;
+    border: 1px solid rgba(139, 92, 246, 0.2);
+    backdrop-filter: blur(2px);
+    /* Altura uniforme si lo deseas */
+    height: 100%;
+}
+
+    .feature-card i {
+        font-size: 44px;
+        color: var(--primary);
+        margin-bottom: 15px;
+        transition: 0.2s;
+    }
+
+    .feature-card:hover {
+        transform: translateY(-8px);
+        box-shadow: var(--shadow-hover);
+        border-color: var(--primary);
+        background-color: #2d3a4e;
+    }
+
+        .feature-card:hover i {
+            color: var(--secondary);
+            text-shadow: 0 0 6px var(--secondary);
+        }
+
+    /* ========== AJUSTES ADICIONALES ========== */
+    .card-title, .game-card h3, .feature-card h4 {
+        color: var(--text-light);
+    }
+
+h1, h2, h3, h4, h5 {
+    font-weight: 600;
+    letter-spacing: -0.3px;
+}
+
+a {
+    color: var(--secondary);
+}
+
+    a:hover {
+        color: var(--primary);
+    }
+
+input, button {
+    outline: none;
+}

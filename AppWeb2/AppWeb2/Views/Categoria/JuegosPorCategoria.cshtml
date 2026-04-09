@@ -1,0 +1,32 @@
+﻿@model IEnumerable<AppWeb2.Models.VideoJuego>
+@{
+    ViewData["Title"] = ViewBag.CategoriaNombre + " - Juegos";
+}
+
+<div class="container mt-5">
+    <h2 class="text-center fw-bold mb-4" style="color: #FFD700;">
+        Juegos de @ViewBag.CategoriaNombre
+    </h2>
+
+    @if (Model.Any())
+    {
+        <div class="row g-4">
+            @foreach (var juego in Model)
+            {
+                <partial name="_GameCard" model="juego" />
+            }
+        </div>
+    }
+    else
+    {
+        <div class="alert alert-info text-center">
+            No hay juegos en esta categoría aún.
+        </div>
+    }
+
+    <div class="text-center mt-4">
+        <a asp-action="Index" class="btn btn-outline-warning">
+            <i class="fas fa-arrow-left"></i> Volver a categorías
+        </a>
+    </div>
+</div>

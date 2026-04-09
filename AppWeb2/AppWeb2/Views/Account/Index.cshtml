@@ -1,0 +1,17 @@
+﻿@model IEnumerable<AppWeb2.Models.VideoJuego>
+@{
+    ViewData["Title"] = "Inicio";
+}
+
+<div class="container mt-5">
+    <!-- Componente reutilizable de tarjetas de funcionalidades -->
+    @await Html.PartialAsync("_FeatureCards")
+
+    <h2 class="text-center fw-bold mb-4" style="color: #FFD700;">Videojuegos Destacados</h2>
+    <div class="row g-4">
+        @foreach (var juego in Model)
+        {
+            @await Html.PartialAsync("_GameCard", juego)
+        }
+    </div>
+</div>

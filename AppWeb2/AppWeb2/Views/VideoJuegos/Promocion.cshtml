@@ -1,0 +1,21 @@
+﻿@model IEnumerable<AppWeb2.Models.VideoJuego>
+@{
+    ViewData["Title"] = "Promociones";
+}
+<div class="container mt-5">
+    <h2 class="text-center fw-bold mb-4" style="color: #FFD700;">Promociones</h2>
+
+    @if (!Model.Any())
+    {
+        <div class="alert alert-info">No hay juegos en promoción en este momento.</div>
+    }
+    else
+    {
+        <div class="row g-4">
+            @foreach (var juego in Model)
+            {
+                @await Html.PartialAsync("_GameCard", juego)
+            }
+        </div>
+    }
+</div>

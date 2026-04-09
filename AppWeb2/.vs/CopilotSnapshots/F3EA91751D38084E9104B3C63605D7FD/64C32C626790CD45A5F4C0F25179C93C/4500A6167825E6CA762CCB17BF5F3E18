@@ -1,0 +1,115 @@
+﻿@model AppWeb2.Models.VideoJuego
+@{
+    ViewData["Title"] = "Editar Videojuego";
+    var categorias = ViewBag.Categorias as List<AppWeb2.Models.Categoria>;
+}
+
+<div class="container mt-4">
+    <h2>Editar Videojuego</h2>
+    <form asp-action="Edit" method="post" enctype="multipart/form-data">
+        <input type="hidden" asp-for="Id" />
+
+        <div class="row g-3">
+            <!-- Título -->
+            <div class="col-md-6">
+                <label asp-for="Titulo" class="form-label"></label>
+                <input asp-for="Titulo" class="form-control" />
+                <span asp-validation-for="Titulo" class="text-danger"></span>
+            </div>
+
+            <!-- Precio -->
+            <div class="col-md-6">
+                <label asp-for="Precio" class="form-label"></label>
+                <input asp-for="Precio" class="form-control" type="number" step="0.01" />
+                <span asp-validation-for="Precio" class="text-danger"></span>
+            </div>
+
+            <!-- Categoría -->
+            <div class="col-md-6">
+                <label asp-for="CategoriaId" class="form-label">Categoría</label>
+                <select asp-for="CategoriaId" class="form-select" asp-items="@(new SelectList(categorias, "Id", "Nombre", Model.CategoriaId))">
+                    <option value="">-- Seleccione --</option>
+                </select>
+                <span asp-validation-for="CategoriaId" class="text-danger"></span>
+            </div>
+
+            <!-- Edad Mínima -->
+            <div class="col-md-6">
+                <label asp-for="EdadMinima" class="form-label">Edad Mínima</label>
+                <input asp-for="EdadMinima" class="form-control" placeholder="+12" />
+                <span asp-validation-for="EdadMinima" class="text-danger"></span>
+            </div>
+
+            <!-- Descripción -->
+            <div class="col-12">
+                <label asp-for="Descripcion" class="form-label"></label>
+                <textarea asp-for="Descripcion" class="form-control" rows="3"></textarea>
+                <span asp-validation-for="Descripcion" class="text-danger"></span>
+            </div>
+
+            <!-- Imagen actual -->
+            <div class="col-12">
+                <label class="form-label">Imagen actual</label><br />
+                @if (!string.IsNullOrEmpty(Model.imagen))
+                {
+                    <img src="@Model.imagen" width="120" class="img-thumbnail mb-2" />
+                }
+                else
+                {
+                    <span class="text-muted">No hay imagen</span>
+                }
+                <div>
+                    <label for="archivoImagen" class="form-label">Cambiar imagen</label>
+                    <input type="file" name="archivoImagen" class="form-control" accept="image/*" />
+                    <small class="text-muted">Dejar vacío para mantener la actual.</small>
+                </div>
+            </div>
+
+            <!-- Sección de descuento -->
+            <div class="col-12 mt-3">
+                <div class="card">
+                    <div class="card-header">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="chkDescuento" asp-for="EnDescuento" />
+                            <label class="form-check-label" for="chkDescuento">Aplicar descuento</label>
+                        </div>
+                    </div>
+                    <div class="card-body" id="descuentoFields" style="@(Model.EnDescuento ? "" : "display:none")">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <label asp-for="PrecioDescuento" class="form-label">Precio con descuento</label>
+                                <input asp-for="PrecioDescuento" class="form-control" type="number" step="0.01" />
+                                <span asp-validation-for="PrecioDescuento" class="text-danger"></span>
+                            </div>
+                            <div class="col-md-6">
+                                <label asp-for="FechaInicioPromo" class="form-label">Fecha inicio</label>
+                                <input asp-for="FechaInicioPromo" class="form-control" type="date" />
+                                <span asp-validation-for="FechaInicioPromo" class="text-danger"></span>
+                            </div>
+                            <div class="col-md-6">
+                                <label asp-for="FechaFinPromo" class="form-label">Fecha fin</label>
+                                <input asp-for="FechaFinPromo" class="form-control" type="date" />
+                                <span asp-validation-for="FechaFinPromo" class="text-danger"></span>
+                            </div>
+                        </div>
+                        <small class="text-muted">Si no especifica fechas, se usará la fecha actual como inicio y 30 días después como fin.</small>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 mt-3">
+                <button type="submit" class="btn btn-warning">Actualizar</button>
+                <a asp-action="Index" class="btn btn-secondary">Cancelar</a>
+            </div>
+        </div>
+    </form>
+</div>
+
+@section Scripts {
+    <script>
+        document.getElementById('chkDescuento').addEventListener('change', function() {
+            var fields = document.getElementById('descuentoFields');
+            fields.style.display = this.checked ? 'block' : 'none';
+        });
+    </script>
+}
