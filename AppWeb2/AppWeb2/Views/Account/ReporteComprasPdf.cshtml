@@ -1,0 +1,113 @@
+﻿@model AppWeb2.Models.ReporteVentasPdfViewModel
+@{
+    Layout = null;
+
+    string azulPrimario = "#004085"; 
+    string azulClaroFondo = "#f0f7ff"; 
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Mis Compras - GameStore</title>
+    <style>
+        .contenedor { width: 100%; margin: auto; }
+        body { font-family: Arial, Helvetica, sans-serif; padding: 20px; }
+        p.title { font-weight: bold; }
+
+        p.title2 { font-weight: bold; color: @azulPrimario; font-size: 20px; }
+        p.text { font-size: 15px; font-weight: 100; color: #858585; }
+        p { margin: 0px; }
+        
+        table.tbproductos { border-collapse: separate; border-spacing: 4px; margin-top: 20px; width: 100%; }
+
+        table.tbproductos thead tr th { background-color: @azulPrimario; padding: 10px; font-size: 15px; color: white; text-align: left; }
+        table.tbproductos tbody tr td { padding: 10px; border-bottom: 2px solid #E8E8E8; }
+        
+        .item { font-size: 14px; color: #757575; }
+
+        .item-bold { font-weight: bold; color: @azulPrimario; }
+
+        .item-3 { font-size: 15px; font-weight: bold; background-color: @azulPrimario; color: white; padding: 10px; }
+
+        .filtros-box { width: 100%; background-color: @azulClaroFondo; padding: 10px; border-left: 5px solid @azulPrimario; }
+    </style>
+</head>
+<body>
+
+    <div class="contenedor">
+       <table class="header-table">
+            <tr>
+                <td style="width: 15%;">
+                    <img src="~/img/logo_gamestore.jpg" style="width: 120px;" />
+                </td>
+                <td style="width: 45%;" class="info-empresa">
+                    <p class="nombre-empresa">@Model.NombreEmpresa</p>
+                    <p>@Model.DescripcionEmpresa</p>
+                    <p>@Model.DireccionEmpresa</p>
+                    <p>Email: @Model.CorreoEmpresa</p>
+                </td>
+                <td style="width: 40%; text-align: right;">
+                    <p class="title-main">@Model.TituloReporte</p>
+                    <p class="user-text">Cliente: <strong>@Model.NombreUsuario</strong></p>
+                    <p class="user-text" style="font-size: 11px;">Fecha Impresión: @DateTime.Now.ToString("dd/MM/yyyy HH:mm")</p>
+                </td>
+            </tr>
+        </table>
+
+        <br />
+
+        
+        <div class="filtros-box">
+            <p class="title" style="font-size: 12px; color: @azulPrimario;">FILTROS DEL REPORTE</p>
+            <p class="text">
+                @if (!string.IsNullOrEmpty(Model.Filtros.Desde)) { 
+                    <span>Rango: @Model.Filtros.Desde al @Model.Filtros.Hasta | </span> 
+                }
+                @if (!string.IsNullOrEmpty(Model.Filtros.SearchString)) { 
+                    <span>Búsqueda: "@Model.Filtros.SearchString"</span> 
+                }
+                else { 
+                    <span>Historial completo</span> 
+                }
+            </p>
+        </div>
+
+        <table class="tbproductos">
+            <thead>
+                <tr>
+                    <th>Transacción</th>
+                    <th>Fecha</th>
+                    <th>Videojuego</th>
+                    <th>Cantidad</th>
+                    <th>Total</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model.Ventas)
+                {
+                    <tr>
+                        <td><p class="item">@item.codigoTransaccion</p></td>
+                        <td><p class="item">@item.fechaHoraTransaccion.ToString("dd/MM/yyyy")</p></td>
+                        <td><p class="item-bold">@item.TituloJuego</p></td>
+                        <td><p class="item">@item.cantidad</p></td>
+                        <td style="background-color: @azulClaroFondo"><p class="item-bold">$@item.total.ToString("N2")</p></td>
+                    </tr>
+                }
+            </tbody>
+            <tfoot>
+                @{
+                    var totalFinal = Model.Ventas.Sum(v => v.total);
+                }
+                <tr>
+                    <td colspan="3"></td>
+                    <td style="text-align:right; padding: 10px;"><p class="title">TOTAL:</p></td>
+                    <td class="item-3"><p>$@totalFinal.ToString("N2")</p></td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,60 @@
+﻿@model List<VentaViewModel>
+@{
+    ViewBag.HideBanner = true;
+    ViewData["Title"] = "Historial de Ventas";
+
+    var filtrosModel = new AppWeb2.Models.FiltrosPaginacionViewModel
+    {
+        Desde = ViewBag.Desde,
+        Hasta = ViewBag.Hasta,
+        SearchString = ViewBag.SearchString,
+        LabelSearch = "CLIENTE (ID O NOMBRE)", 
+        Estado = ViewBag.Estado,
+        MostrarEstado = true,                  
+        PaginaActual = ViewBag.PaginaActual,
+        TotalPaginas = ViewBag.TotalPaginas,
+        Controller = "Account",
+        Action = "DetalleVentas"
+    };
+}
+
+<div class="container mt-4">
+    <h2 class="mb-4" style="color: var(--primary);">Historial de Ventas</h2>
+
+    @await Component.InvokeAsync("FiltrosPaginacion", new { model = filtrosModel })
+
+    <div class="table-responsive">
+        <table class="table table-hover align-middle">
+            <thead style="background-color: var(--primary); color: white;">
+                <tr>
+                    <th>Usuario</th>
+                    <th>VideoJuego</th>
+                    <th>Cantidad</th>
+                    <th>Total</th>
+                    <th>Estado</th>
+                    <th>Fecha</th>
+                    <th>Código</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var venta in Model)
+                {
+                    <tr>
+                        <td>@venta.clienteNombre</td>
+                        <td>@venta.TituloJuego</td>
+                        <td>@venta.cantidad</td>
+                        <td class="fw-bold" style="color: var(--primary);">$@venta.total.ToString("F2")</td>
+                        <td><span class="badge bg-success">@venta.estadoCompra</span></td>
+                        <td>@venta.fechaHoraTransaccion.ToString("dd/MM/yyyy")</td>
+                        <td><code>@venta.codigoTransaccion</code></td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+
+    @if (!Model.Any())
+    {
+        <div class="alert alert-info text-center">No se encontraron ventas.</div>
+    }
+</div>

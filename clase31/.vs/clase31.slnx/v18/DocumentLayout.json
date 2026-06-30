@@ -1,0 +1,203 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\dalia\\source\\repos\\clase31\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{50FEAB72-F060-95B0-9F04-E31356C3AA0A}|clase31.csproj|c:\\users\\dalia\\source\\repos\\clase31\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{50FEAB72-F060-95B0-9F04-E31356C3AA0A}|clase31.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{50FEAB72-F060-95B0-9F04-E31356C3AA0A}|clase31.csproj|c:\\users\\dalia\\source\\repos\\clase31\\controllers\\libroscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{50FEAB72-F060-95B0-9F04-E31356C3AA0A}|clase31.csproj|solutionrelative:controllers\\libroscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{50FEAB72-F060-95B0-9F04-E31356C3AA0A}|clase31.csproj|c:\\users\\dalia\\source\\repos\\clase31\\services\\libroservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{50FEAB72-F060-95B0-9F04-E31356C3AA0A}|clase31.csproj|solutionrelative:services\\libroservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{50FEAB72-F060-95B0-9F04-E31356C3AA0A}|clase31.csproj|c:\\users\\dalia\\source\\repos\\clase31\\services\\ilibroservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{50FEAB72-F060-95B0-9F04-E31356C3AA0A}|clase31.csproj|solutionrelative:services\\ilibroservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{50FEAB72-F060-95B0-9F04-E31356C3AA0A}|clase31.csproj|c:\\users\\dalia\\source\\repos\\clase31\\repositories\\ilibrorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{50FEAB72-F060-95B0-9F04-E31356C3AA0A}|clase31.csproj|solutionrelative:repositories\\ilibrorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{50FEAB72-F060-95B0-9F04-E31356C3AA0A}|clase31.csproj|c:\\users\\dalia\\source\\repos\\clase31\\repositories\\librorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{50FEAB72-F060-95B0-9F04-E31356C3AA0A}|clase31.csproj|solutionrelative:repositories\\librorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{50FEAB72-F060-95B0-9F04-E31356C3AA0A}|clase31.csproj|c:\\users\\dalia\\source\\repos\\clase31\\models\\libro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{50FEAB72-F060-95B0-9F04-E31356C3AA0A}|clase31.csproj|solutionrelative:models\\libro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{50FEAB72-F060-95B0-9F04-E31356C3AA0A}|clase31.csproj|c:\\users\\dalia\\source\\repos\\clase31\\migrations\\20260513161459_inicial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{50FEAB72-F060-95B0-9F04-E31356C3AA0A}|clase31.csproj|solutionrelative:migrations\\20260513161459_inicial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{50FEAB72-F060-95B0-9F04-E31356C3AA0A}|clase31.csproj|c:\\users\\dalia\\source\\repos\\clase31\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{50FEAB72-F060-95B0-9F04-E31356C3AA0A}|clase31.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{50FEAB72-F060-95B0-9F04-E31356C3AA0A}|clase31.csproj|c:\\users\\dalia\\source\\repos\\clase31\\data\\apicontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{50FEAB72-F060-95B0-9F04-E31356C3AA0A}|clase31.csproj|solutionrelative:data\\apicontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 9,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{7cc9e714-2774-4fc6-8631-a07eee703286}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "LibrosController.cs",
+              "DocumentMoniker": "C:\\Users\\dalia\\source\\repos\\clase31\\Controllers\\LibrosController.cs",
+              "RelativeDocumentMoniker": "Controllers\\LibrosController.cs",
+              "ToolTip": "C:\\Users\\dalia\\source\\repos\\clase31\\Controllers\\LibrosController.cs",
+              "RelativeToolTip": "Controllers\\LibrosController.cs",
+              "ViewState": "AgIAACAAAAAAAAAAAAAgwDkAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-19T14:15:32.569Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "LibroService.cs",
+              "DocumentMoniker": "C:\\Users\\dalia\\source\\repos\\clase31\\Services\\LibroService.cs",
+              "RelativeDocumentMoniker": "Services\\LibroService.cs",
+              "ToolTip": "C:\\Users\\dalia\\source\\repos\\clase31\\Services\\LibroService.cs",
+              "RelativeToolTip": "Services\\LibroService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-19T14:14:20.71Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ILibroService.cs",
+              "DocumentMoniker": "C:\\Users\\dalia\\source\\repos\\clase31\\Services\\ILibroService.cs",
+              "RelativeDocumentMoniker": "Services\\ILibroService.cs",
+              "ToolTip": "C:\\Users\\dalia\\source\\repos\\clase31\\Services\\ILibroService.cs",
+              "RelativeToolTip": "Services\\ILibroService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-19T14:13:44.028Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "LibroRepository.cs",
+              "DocumentMoniker": "C:\\Users\\dalia\\source\\repos\\clase31\\Repositories\\LibroRepository.cs",
+              "RelativeDocumentMoniker": "Repositories\\LibroRepository.cs",
+              "ToolTip": "C:\\Users\\dalia\\source\\repos\\clase31\\Repositories\\LibroRepository.cs",
+              "RelativeToolTip": "Repositories\\LibroRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAA4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-19T14:10:43.882Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ILibroRepository.cs",
+              "DocumentMoniker": "C:\\Users\\dalia\\source\\repos\\clase31\\Repositories\\ILibroRepository.cs",
+              "RelativeDocumentMoniker": "Repositories\\ILibroRepository.cs",
+              "ToolTip": "C:\\Users\\dalia\\source\\repos\\clase31\\Repositories\\ILibroRepository.cs",
+              "RelativeToolTip": "Repositories\\ILibroRepository.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAAAAQAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-19T14:09:55.203Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Libro.cs",
+              "DocumentMoniker": "C:\\Users\\dalia\\source\\repos\\clase31\\Models\\Libro.cs",
+              "RelativeDocumentMoniker": "Models\\Libro.cs",
+              "ToolTip": "C:\\Users\\dalia\\source\\repos\\clase31\\Models\\Libro.cs",
+              "RelativeToolTip": "Models\\Libro.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-13T16:10:41.47Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\dalia\\source\\repos\\clase31\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\dalia\\source\\repos\\clase31\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAgwAsAAABIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-13T16:02:12.294Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "20260513161459_Inicial.cs",
+              "DocumentMoniker": "C:\\Users\\dalia\\source\\repos\\clase31\\Migrations\\20260513161459_Inicial.cs",
+              "RelativeDocumentMoniker": "Migrations\\20260513161459_Inicial.cs",
+              "ToolTip": "C:\\Users\\dalia\\source\\repos\\clase31\\Migrations\\20260513161459_Inicial.cs",
+              "RelativeToolTip": "Migrations\\20260513161459_Inicial.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-13T16:15:00.845Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\dalia\\source\\repos\\clase31\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "C:\\Users\\dalia\\source\\repos\\clase31\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-05-13T16:01:45.937Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "ApiContext.cs",
+              "DocumentMoniker": "C:\\Users\\dalia\\source\\repos\\clase31\\Data\\ApiContext.cs",
+              "RelativeDocumentMoniker": "Data\\ApiContext.cs",
+              "ToolTip": "C:\\Users\\dalia\\source\\repos\\clase31\\Data\\ApiContext.cs",
+              "RelativeToolTip": "Data\\ApiContext.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAwAkAAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-13T16:01:01.125Z"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

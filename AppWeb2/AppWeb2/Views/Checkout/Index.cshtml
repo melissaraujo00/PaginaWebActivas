@@ -1,0 +1,100 @@
+﻿@using System.Globalization
+@{
+    ViewBag.HideBanner = true;
+    var titulo = Context.Session.GetString("Titulo");
+    var precioStr = Context.Session.GetString("PrecioFinal");
+    decimal precio = 0;
+    if (precioStr != null)
+        decimal.TryParse(precioStr, NumberStyles.Any, CultureInfo.InvariantCulture, out precio);
+    var juegoId = Context.Session.GetInt32("JuegoId") ?? 0;
+}
+
+<script src="https://www.paypal.com/sdk/js?client-id=@(ViewBag.PaypalClientId)&currency=USD"></script>
+
+<div class="container d-flex justify-content-center align-items-center min-vh-100 py-5">
+    <div class="col-md-6 col-lg-5">
+        <div class="card checkout-card shadow-lg border-0" style="background-color: var(--card-bg); border-radius: 1.5rem;">
+            <div class="card-header bg-transparent border-0 pt-4 text-center">
+                <h2 class="fw-bold" style="color: var(--primary);">Finalizar Compra</h2>
+                <p class="text-muted">Revisa los detalles de tu pedido</p>
+            </div>
+            <div class="card-body p-4">
+                <div class="mb-4 pb-2 border-bottom border-secondary">
+                    <label class="form-label text-muted small">PRODUCTO</label>
+                    <p class="fs-5 fw-semibold mb-0">@titulo</p>
+                </div>
+                <div class="mb-4">
+                    <label class="form-label text-muted small">TOTAL A PAGAR</label>
+                    <p class="display-6 fw-bold" style="color: var(--secondary);">$@precio.ToString("F2")</p>
+                </div>
+                <div id="notification-container"></div>
+                <div id="paypal-button-container" class="mt-3"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script>
+    const totalAmount = @precio.ToString("F2", CultureInfo.InvariantCulture);
+    const juegoId = @juegoId;
+    const precioFinal = totalAmount;
+
+    paypal.Buttons({
+        async createOrder() {
+            const response = await fetch("@Url.ActionLink("CreateOrder", "Checkout")", {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify({ amount: totalAmount.toFixed(2) })
+            });
+            const order = await response.json();
+            return order.id;
+        },
+        async onApprove(data) {
+            const response = await fetch("@Url.ActionLink("CompleteOrder", "Checkout")", {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify({
+                    orderID: data.orderID,
+                    juegoId: juegoId,
+                    precioFinal: precioFinal
+                })
+            });
+            const result = await response.json();
+            if (result.success === true) {
+                document.getElementById("notification-container").innerHTML = `
+                    <div class='alert alert-success alert-dismissible fade show' role='alert'>
+                        <strong>¡Pago exitoso!</strong> Tu compra ha sido registrada.
+                        <button type='button' class='btn-close' data-bs-dismiss='alert' aria-label='Close'></button>
+                    </div>
+                `;
+                setTimeout(() => { window.location.href = "@Url.Action("Confirmation", "Checkout")"; }, 2000);
+            } else {
+                let mensaje = result.error || result.details || "Error desconocido";
+                if (result.statusCode) mensaje += ` (HTTP ${result.statusCode})`;
+                document.getElementById("notification-container").innerHTML = `
+                    <div class='alert alert-danger alert-dismissible fade show' role='alert'>
+                        <strong>Error:</strong> ${mensaje}
+                        <button type='button' class='btn-close' data-bs-dismiss='alert' aria-label='Close'></button>
+                    </div>
+                `;
+            }
+        },
+        onCancel(data) {
+            document.getElementById("notification-container").innerHTML = `
+                <div class='alert alert-warning alert-dismissible fade show' role='alert'>
+                    <strong>Pago cancelado.</strong>
+                    <button type='button' class='btn-close' data-bs-dismiss='alert' aria-label='Close'></button>
+                </div>
+            `;
+        },
+        onError(err) {
+            document.getElementById("notification-container").innerHTML = `
+                <div class='alert alert-danger alert-dismissible fade show' role='alert'>
+                    <strong>Error:</strong> ${err.message}
+                    <button type='button' class='btn-close' data-bs-dismiss='alert' aria-label='Close'></button>
+                </div>
+            `;
+        }
+    }).render('#paypal-button-container');
+</script>

@@ -1,0 +1,47 @@
+﻿@model AgenciaEnvio.Models.Sucursal
+
+@{
+    ViewData["Title"] = "Crear Sucursal";
+}
+
+<div class="crud-container">
+    <div class="crud-header">
+        <h2>@ViewData["Title"]</h2>
+    </div>
+
+    <div class="form-card">
+        <form asp-action="Create" method="post">
+
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+            <div class="form-group">
+                <label asp-for="Nombre" class="control-label"></label>
+                <input asp-for="Nombre" class="form-control" placeholder="Ej. Agencia San Miguel Centro" />
+                <span asp-validation-for="Nombre" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="Direccion" class="control-label"></label>
+                <input asp-for="Direccion" class="form-control" placeholder="Ej. 3ra Calle Poniente, Local 4" />
+                <span asp-validation-for="Direccion" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="Telefono" class="control-label"></label>
+                <input asp-for="Telefono" class="form-control" placeholder="Ej. 2661-0000" />
+                <span asp-validation-for="Telefono" class="text-danger"></span>
+            </div>
+
+            <div class="form-actions">
+                <button type="submit" class="btn btn-primary">Guardar Sucursal</button>
+                <a asp-action="Index" class="btn btn-secondary">Cancelar y Regresar</a>
+            </div>
+        </form>
+    </div>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

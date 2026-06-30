@@ -1,0 +1,48 @@
+## Visual Studio 2022 - C# .gitignore
+
+# Compilación y Salidas (Build Outputs)
+bin/
+obj/
+out/
+[Rr]elease/
+[Dd]ebug/
+x64/
+x86/
+
+# Archivos de usuario y configuración de VS
+.vs/
+*.user
+*.userosscache
+*.sln.docstates
+*.suo
+
+# NuGet Packages
+packages/
+*.nuget.props
+*.nuget.targets
+
+# Resultados de pruebas (Test Results)
+TestResults/
+*.trx
+*.vstest
+
+# Archivos temporales de MSBuild y VS
+.config/
+.cache/
+*.log
+*.tmp
+*.temp
+
+# Publicación (Publish)
+*.publish.xml
+appsettings.Development.json
+appsettings.Local.json
+
+# Herramientas de análisis de código (Roslyn, etc.)
+.analyzerdata/
+
+# Archivos de SO
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+.DS_Store

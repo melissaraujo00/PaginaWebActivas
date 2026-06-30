@@ -1,0 +1,12 @@
+C:\Users\dalia\source\repos\Domian\bin\Debug\net8.0\Domian.deps.json
+C:\Users\dalia\source\repos\Domian\bin\Debug\net8.0\Domian.dll
+C:\Users\dalia\source\repos\Domian\bin\Debug\net8.0\Domian.pdb
+C:\Users\dalia\source\repos\Domian\obj\Debug\net8.0\Domian.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\dalia\source\repos\Domian\obj\Debug\net8.0\Domian.AssemblyInfoInputs.cache
+C:\Users\dalia\source\repos\Domian\obj\Debug\net8.0\Domian.AssemblyInfo.cs
+C:\Users\dalia\source\repos\Domian\obj\Debug\net8.0\Domian.csproj.CoreCompileInputs.cache
+C:\Users\dalia\source\repos\Domian\obj\Debug\net8.0\Domian.sourcelink.json
+C:\Users\dalia\source\repos\Domian\obj\Debug\net8.0\Domian.dll
+C:\Users\dalia\source\repos\Domian\obj\Debug\net8.0\refint\Domian.dll
+C:\Users\dalia\source\repos\Domian\obj\Debug\net8.0\Domian.pdb
+C:\Users\dalia\source\repos\Domian\obj\Debug\net8.0\ref\Domian.dll

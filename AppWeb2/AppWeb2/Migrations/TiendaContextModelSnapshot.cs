@@ -65,6 +65,63 @@ namespace AppWeb2.Migrations
                     b.ToTable("Compras");
                 });
 
+            modelBuilder.Entity("AppWeb2.Models.DetalleCompra", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<int>("VideoJuegoId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("cantidad")
+                        .HasColumnType("int");
+
+                    b.Property<string>("codigoTransaccion")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("estadoCompra")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime>("fechaHoraTransaccion")
+                        .HasColumnType("datetime2");
+
+                    b.Property<int>("idCompra")
+                        .HasColumnType("int");
+
+                    b.Property<decimal>("total")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("VideoJuegoId");
+
+                    b.HasIndex("idCompra");
+
+                    b.ToTable("DetalleCompras");
+                });
+
+            modelBuilder.Entity("AppWeb2.Models.Rol", b =>
+                {
+                    b.Property<int>("idRol")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("idRol"));
+
+                    b.Property<string>("rol")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("idRol");
+
+                    b.ToTable("Roles");
+                });
+
             modelBuilder.Entity("AppWeb2.Models.Usuario", b =>
                 {
                     b.Property<int>("Id")
@@ -96,10 +153,15 @@ namespace AppWeb2.Migrations
                         .HasMaxLength(50)
                         .HasColumnType("nvarchar(50)");
 
+                    b.Property<int>("idRol")
+                        .HasColumnType("int");
+
                     b.HasKey("Id");
 
                     b.HasIndex("Email")
                         .IsUnique();
+
+                    b.HasIndex("idRol");
 
                     b.ToTable("Usuarios");
                 });
@@ -166,6 +228,36 @@ namespace AppWeb2.Migrations
                         .IsRequired();
 
                     b.Navigation("Usuario");
+                });
+
+            modelBuilder.Entity("AppWeb2.Models.DetalleCompra", b =>
+                {
+                    b.HasOne("AppWeb2.Models.VideoJuego", "VideoJuego")
+                        .WithMany()
+                        .HasForeignKey("VideoJuegoId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("AppWeb2.Models.Compra", "Compra")
+                        .WithMany()
+                        .HasForeignKey("idCompra")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Compra");
+
+                    b.Navigation("VideoJuego");
+                });
+
+            modelBuilder.Entity("AppWeb2.Models.Usuario", b =>
+                {
+                    b.HasOne("AppWeb2.Models.Rol", "Rol")
+                        .WithMany()
+                        .HasForeignKey("idRol")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Rol");
                 });
 
             modelBuilder.Entity("AppWeb2.Models.VideoJuego", b =>

@@ -17,11 +17,12 @@ namespace presentacion
 
             if (acceso)
             {
+                Session["usuario"] = txtUsuario.Text;
                 Response.Redirect("principal.aspx");
             }
             else
             {
-                lblmensaje.Text = "Acceso denegado";
+                lblMensaje.Text = "Acceso denegado";
             }
 
         }

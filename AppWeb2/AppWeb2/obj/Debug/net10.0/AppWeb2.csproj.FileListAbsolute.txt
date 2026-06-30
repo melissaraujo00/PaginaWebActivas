@@ -145,9 +145,7 @@ C:\Users\dalia\source\repos\AppWeb2\AppWeb2\obj\Debug\net10.0\AppWeb2.sourcelink
 C:\Users\dalia\source\repos\AppWeb2\AppWeb2\obj\Debug\net10.0\rjimswa.dswa.cache.json
 C:\Users\dalia\source\repos\AppWeb2\AppWeb2\obj\Debug\net10.0\rjsmrazor.dswa.cache.json
 C:\Users\dalia\source\repos\AppWeb2\AppWeb2\obj\Debug\net10.0\rjsmcshtml.dswa.cache.json
-C:\Users\dalia\source\repos\AppWeb2\AppWeb2\obj\Debug\net10.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
 C:\Users\dalia\source\repos\AppWeb2\AppWeb2\obj\Debug\net10.0\scopedcss\bundle\AppWeb2.styles.css
-C:\Users\dalia\source\repos\AppWeb2\AppWeb2\obj\Debug\net10.0\scopedcss\projectbundle\AppWeb2.bundle.scp.css
 C:\Users\dalia\source\repos\AppWeb2\AppWeb2\obj\Debug\net10.0\compressed\roluqjzts1-{0}-61n19gt1b8-61n19gt1b8.gz
 C:\Users\dalia\source\repos\AppWeb2\AppWeb2\obj\Debug\net10.0\compressed\4bucn1wh82-{0}-xtxxf3hu2r-xtxxf3hu2r.gz
 C:\Users\dalia\source\repos\AppWeb2\AppWeb2\obj\Debug\net10.0\compressed\0wn4hdajuf-{0}-bqjiyaj88i-bqjiyaj88i.gz
@@ -209,8 +207,6 @@ C:\Users\dalia\source\repos\AppWeb2\AppWeb2\obj\Debug\net10.0\compressed\zw4a4z2
 C:\Users\dalia\source\repos\AppWeb2\AppWeb2\obj\Debug\net10.0\compressed\rv5r3bzyzm-{0}-muycvpuwrr-muycvpuwrr.gz
 C:\Users\dalia\source\repos\AppWeb2\AppWeb2\obj\Debug\net10.0\compressed\zvkoxzcvlc-{0}-87fc7y1x7t-87fc7y1x7t.gz
 C:\Users\dalia\source\repos\AppWeb2\AppWeb2\obj\Debug\net10.0\compressed\7m0p19bwhf-{0}-mlv21k5csn-mlv21k5csn.gz
-C:\Users\dalia\source\repos\AppWeb2\AppWeb2\obj\Debug\net10.0\compressed\fxv9qh1qbg-{0}-83neu4av50-83neu4av50.gz
-C:\Users\dalia\source\repos\AppWeb2\AppWeb2\obj\Debug\net10.0\compressed\gyopiua4wj-{0}-83neu4av50-83neu4av50.gz
 C:\Users\dalia\source\repos\AppWeb2\AppWeb2\obj\Debug\net10.0\staticwebassets.build.json
 C:\Users\dalia\source\repos\AppWeb2\AppWeb2\obj\Debug\net10.0\staticwebassets.build.json.cache
 C:\Users\dalia\source\repos\AppWeb2\AppWeb2\obj\Debug\net10.0\staticwebassets.development.json
@@ -223,4 +219,6 @@ C:\Users\dalia\source\repos\AppWeb2\AppWeb2\obj\Debug\net10.0\refint\AppWeb2.dll
 C:\Users\dalia\source\repos\AppWeb2\AppWeb2\obj\Debug\net10.0\AppWeb2.pdb
 C:\Users\dalia\source\repos\AppWeb2\AppWeb2\obj\Debug\net10.0\AppWeb2.genruntimeconfig.cache
 C:\Users\dalia\source\repos\AppWeb2\AppWeb2\obj\Debug\net10.0\ref\AppWeb2.dll
-C:\Users\dalia\source\repos\AppWeb2\AppWeb2\obj\Debug\net10.0\compressed\zm7preem9h-{0}-04bgx6bq2n-04bgx6bq2n.gz
+C:\Users\dalia\source\repos\AppWeb2\AppWeb2\bin\Debug\net10.0\Rotativa.AspNetCore.dll
+C:\Users\dalia\source\repos\AppWeb2\AppWeb2\obj\Debug\net10.0\AppWeb2.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\dalia\source\repos\AppWeb2\AppWeb2\obj\Debug\net10.0\compressed\zm7preem9h-{0}-cvnlyinrml-cvnlyinrml.gz

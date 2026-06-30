@@ -1,0 +1,40 @@
+﻿@model IEnumerable<AppWeb2.Models.VideoJuego>
+@{
+    ViewData["Title"] = "Tienda de Juegos";
+    ViewBag.HideBanner = true;
+}
+
+<div class="container mt-4">
+    <h2 class="text-center fw-bold mb-4" style="color: var(--primary);">Catálogo de Videojuegos</h2>
+
+    @if (!Model.Any())
+    {
+        <div class="alert alert-info text-center">
+            No hay juegos disponibles en este momento.
+        </div>
+    }
+    else
+    {
+        <div class="row g-4">
+            @foreach (var juego in Model)
+            {
+                @await Html.PartialAsync("_GameCard", juego)
+            }
+        </div>
+
+        @if (ViewBag.TotalPaginas > 1)
+        {
+            <nav aria-label="Page navigation" class="mt-5">
+                <ul class="pagination justify-content-center">
+                    @for (int i = 1; i <= ViewBag.TotalPaginas; i++)
+                    {
+                        <li class="page-item @(i == ViewBag.PaginaActual ? "active" : "")">
+                            <a class="page-link" href="?pagina=@i">@i</a>
+                        </li>
+                    }
+                </ul>
+            </nav>
+        }
+
+    }
+</div>

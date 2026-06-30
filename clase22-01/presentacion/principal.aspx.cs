@@ -11,7 +11,26 @@ namespace presentacion
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            if (Session["usuario"] == null)
+            {
+                Response.Redirect("index.aspx");
+            }
+            else { 
+                lblUsuario.Text = Session["usuario"].ToString();
+            }
 
+        }
+
+        protected void btnCerrarSesion_Click(object sender, EventArgs e)
+        {
+            Session.Clear();
+            Session.Abandon();
+            Response.Redirect("index.aspx");
+        }
+
+        protected void btnHabitaciones_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("habitaciones.aspx");
         }
     }
 }

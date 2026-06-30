@@ -1,0 +1,51 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Small Box</title>
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    @await RenderSectionAsync("Styles", required: false)
+</head>
+<body>
+    <div class="app-layout">
+
+        <aside class="sidebar">
+            <div class="sidebar-brand">
+                <h2>📦 Small Box</h2>
+            </div>
+            <nav class="sidebar-nav">
+                <a asp-controller="Home" asp-action="Index" class="nav-item">📊 Panel de Control</a>
+                <a asp-controller="Sucursal" asp-action="Index" class="nav-item">🏢 Sucursales</a>
+                <a asp-controller="Usuarios" asp-action="Index" class="nav-item">👥 Clientes </a>
+            </nav>
+        </aside>
+
+        <div class="main-wrapper">
+
+            <header class="topbar">
+                <div class="topbar-search">
+                    <span style="color: var(--text-muted); font-size: 0.9rem;">Sistema de Gestión Logística</span>
+                </div>
+                <div class="topbar-user">
+                    <span class="user-role">Administrador</span>
+                    <div class="avatar">A</div>
+                </div>
+            </header>
+
+            <main class="content-area">
+                @RenderBody()
+            </main>
+
+            <footer class="app-footer">
+                <p>&copy; @DateTime.Now.Year - Agencia de Envíos Small Box. Todos los derechos reservados.</p>
+            </footer>
+
+        </div>
+    </div>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

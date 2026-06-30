@@ -1,0 +1,51 @@
+﻿@model IEnumerable<AgenciaEnvio.Models.Sucursal>
+
+@{
+    ViewData["Title"] = "Sucursales";
+}
+
+<div class="crud-container">
+    <div class="crud-header">
+        <h2>@ViewData["Title"]</h2>
+        <a asp-action="Create" class="btn btn-primary">
+            Nueva Sucursal
+        </a>
+    </div>
+
+    <div class="table-card">
+        <table class="crud-table">
+            <thead>
+                <tr>
+                    <th>@Html.DisplayNameFor(model => model.Id)</th>
+                    <th>@Html.DisplayNameFor(model => model.Nombre)</th>
+                    <th>Dirección</th>
+                    <th>Teléfono</th>
+                    <th class="text-center">Acciones</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var sucursal in Model)
+                {
+                    <tr>
+                        <td>
+                            @Html.DisplayFor(modelItem => sucursal.Id)
+                        </td>
+                        <td class="font-semibold">
+                            @Html.DisplayFor(modelItem => sucursal.Nombre)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => sucursal.Direccion)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => sucursal.Telefono)
+                        </td>
+                        <td class="action-buttons text-center">
+                            <a asp-action="Edit" asp-route-id="@sucursal.Id" class="btn-icon edit" title="Editar">✏️</a>
+                            <a asp-action="Delete" asp-route-id="@sucursal.Id" class="btn-icon delete" title="Eliminar">🗑️</a>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>

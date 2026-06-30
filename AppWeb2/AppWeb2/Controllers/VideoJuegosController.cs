@@ -1,4 +1,5 @@
 ﻿using AppWeb2.Data;
+using AppWeb2.Filtros;
 using AppWeb2.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
@@ -15,12 +16,32 @@ namespace AppWeb2.Controllers
             _context = context;
         }
 
-        public async Task<IActionResult> Index()
+        [RoleAuthorize(1)]
+        [SessionAuthorize]
+        public async Task<IActionResult> Index(int pagina = 1)
         {
-            var juegos = await _context.VideoJuegos.Include(j => j.Categoria).ToListAsync();
+
+            int registrosPorPagina = 5;
+
+            var query = _context.VideoJuegos
+                .Include(j => j.Categoria)
+                .OrderByDescending(j => j.Id);
+
+            int totalRegistros = await query.CountAsync();
+
+            var juegos = await query
+                .Skip((pagina - 1) * registrosPorPagina)
+                .Take(registrosPorPagina)
+                .ToListAsync();
+
+            ViewBag.TotalPaginas = (int)Math.Ceiling((double)totalRegistros / registrosPorPagina);
+            ViewBag.PaginaActual = pagina;
+
             return View(juegos);
         }
 
+
+        [RoleAuthorize(1)]
         public IActionResult Create()
         {
             ViewBag.Categorias = new SelectList(_context.Categorias.ToList(), "id", "Nombre");
@@ -29,6 +50,7 @@ namespace AppWeb2.Controllers
 
         [HttpPost]
         [ValidateAntiForgeryToken]
+        [RoleAuthorize(1)]
         public async Task<IActionResult> Create(VideoJuego juego, IFormFile archivoImagen)
         {
             if (ModelState.IsValid)
@@ -55,7 +77,7 @@ namespace AppWeb2.Controllers
             ViewBag.Categorias = new SelectList(await _context.Categorias.ToListAsync(), "id", "Nombre", juego.CategoriaId);
             return View(juego);
         }
-
+        [RoleAuthorize(1)]
         public async Task<IActionResult> Edit(int? id)
         {
             if (id == null) return NotFound();
@@ -70,6 +92,7 @@ namespace AppWeb2.Controllers
 
         [HttpPost]
         [ValidateAntiForgeryToken]
+        [RoleAuthorize(1)]
         public async Task<IActionResult> Edit(int id, VideoJuego juego, IFormFile? archivoImagen)
         {
             if (id != juego.Id)
@@ -116,7 +139,7 @@ namespace AppWeb2.Controllers
             ViewBag.Categorias = new SelectList(await _context.Categorias.ToListAsync(), "id", "Nombre", juego.CategoriaId);
             return View(juego);
         }
-
+        [RoleAuthorize(1)]
         public async Task<IActionResult> Delete(int? id)
         {
             if (id == null) return NotFound();
@@ -128,6 +151,7 @@ namespace AppWeb2.Controllers
         }
 
         [HttpPost, ActionName("Delete")]
+        [RoleAuthorize(1)]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {

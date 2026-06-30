@@ -4,3 +4,9 @@ C:\Users\dalia\source\repos\clase22-02\datos\obj\Debug\datos.csproj.AssemblyRefe
 C:\Users\dalia\source\repos\clase22-02\datos\obj\Debug\datos.csproj.CoreCompileInputs.cache
 C:\Users\dalia\source\repos\clase22-02\datos\obj\Debug\datos.dll
 C:\Users\dalia\source\repos\clase22-02\datos\obj\Debug\datos.pdb
+C:\Users\dalia\source\repos\clase22-01\datos\bin\Debug\datos.dll
+C:\Users\dalia\source\repos\clase22-01\datos\bin\Debug\datos.pdb
+C:\Users\dalia\source\repos\clase22-01\datos\obj\Debug\datos.csproj.AssemblyReference.cache
+C:\Users\dalia\source\repos\clase22-01\datos\obj\Debug\datos.csproj.CoreCompileInputs.cache
+C:\Users\dalia\source\repos\clase22-01\datos\obj\Debug\datos.dll
+C:\Users\dalia\source\repos\clase22-01\datos\obj\Debug\datos.pdb

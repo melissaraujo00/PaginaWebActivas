@@ -1,0 +1,72 @@
+﻿@model IEnumerable<AppWeb2.Models.Usuario>
+@{
+    ViewData["Title"] = "Administración de Clientes";
+}
+
+<div class="container mt-4">
+    <h2 class="mb-4" style="color: #1E88E5; font-weight: bold;">Cartera de Clientes</h2>
+
+    <!-- Buscador -->
+    <div class="card shadow-sm border-0 mb-4 bg-light">
+        <div class="card-body">
+            <form method="get" asp-action="Clientes" class="d-flex gap-2">
+                <input type="text" name="searchString" value="@ViewBag.SearchString" class="form-control" placeholder="Buscar por nombre o correo electrónico..." />
+                <button type="submit" class="btn btn-primary" style="background-color: #1E88E5; border: none;">Buscar</button>
+                <a asp-action="Clientes" class="btn btn-outline-secondary">Limpiar</a>
+            </form>
+        </div>
+    </div>
+
+    <!-- Tabla -->
+    <div class="table-responsive">
+        <table class="table table-hover align-middle">
+            <thead style="background-color: #1E88E5; color: white;">
+                <tr>
+                    <th>ID</th>
+                    <th>Nombre</th>
+                    <th>Correo Electrónico</th>
+                    <th class="text-center">Estado</th>
+                    <th >Acciones</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var cliente in Model)
+                {
+                    <tr>
+                        <td><strong>@cliente.Id</strong></td>
+                        <td>@cliente.Nombre</td>
+                        <td>@cliente.Email</td>
+                        <td class="text-center">
+                            <span class="badge bg-success">Activo</span>
+                        </td>
+                        <td class="text-center">
+                            <a asp-action="EditarCliente" asp-route-id="@cliente.Id" class="btn btn-warning btn-sm text-white">
+                                <i class="fas fa-edit"></i>
+                            </a>
+                            <form asp-action="EliminarCliente" asp-route-id="@cliente.Id" method="post" class="d-inline" onsubmit="return confirm('¿Seguro que deseas eliminar a este cliente?');">
+                                <button type="submit" class="btn btn-danger btn-sm">
+                                    <i class="fas fa-trash"></i>
+                                </button>
+                            </form>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Paginación -->
+    @if (ViewBag.TotalPaginas > 1)
+    {
+        <nav class="mt-4">
+            <ul class="pagination justify-content-center">
+                @for (int i = 1; i <= ViewBag.TotalPaginas; i++)
+                {
+                    <li class="page-item @(i == ViewBag.PaginaActual ? "active" : "")">
+                        <a class="page-link" asp-action="Clientes" asp-route-pagina="@i" asp-route-searchString="@ViewBag.SearchString">@i</a>
+                    </li>
+                }
+            </ul>
+        </nav>
+    }
+</div>

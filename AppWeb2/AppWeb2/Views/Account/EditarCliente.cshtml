@@ -1,0 +1,60 @@
+﻿@model AppWeb2.Models.ClienteAdminViewModel
+@{
+    ViewData["Title"] = "Editar Cliente";
+}
+
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="card shadow-sm border-0">
+                <div class="card-header text-white d-flex justify-content-between align-items-center" style="background-color: #1E88E5;">
+                    <h4 class="mb-0"><i class="fas fa-user-edit me-2"></i>Editar Cliente</h4>
+                    <a asp-action="Clientes" class="btn btn-sm btn-light text-primary fw-bold">Volver a la lista</a>
+                </div>
+                <div class="card-body p-4">
+                    
+                    <form asp-action="EditarCliente" method="post">
+                        <!-- Campo oculto para el ID del cliente -->
+                        <input type="hidden" asp-for="Id" />
+
+                        <div class="row mb-3">
+                            <div class="col-md-6">
+                                <label class="form-label fw-bold">Nombre Completo</label>
+                                <input asp-for="Nombre" class="form-control" />
+                                <span asp-validation-for="Nombre" class="text-danger small"></span>
+                            </div>
+                            <div class="col-md-6">
+                                <label class="form-label fw-bold">Correo Electrónico</label>
+                                <input asp-for="Email" class="form-control" />
+                                <span asp-validation-for="Email" class="text-danger small"></span>
+                            </div>
+                        </div>
+
+                        <div class="alert alert-info mt-4 mb-3" role="alert">
+                            <i class="fas fa-info-circle me-2"></i> <strong>Opcional:</strong> Si dejas el campo de contraseña en blanco, el cliente mantendrá su contraseña actual.
+                        </div>
+
+                        <div class="row mb-4">
+                            <div class="col-md-12">
+                                <label class="form-label fw-bold">Nueva Contraseña (Opcional)</label>
+                                <input asp-for="Password" type="password" class="form-control" placeholder="Escribe aquí solo si deseas asignarle una nueva contraseña" />
+                                <span asp-validation-for="Password" class="text-danger small"></span>
+                            </div>
+                        </div>
+
+                        <div class="d-flex justify-content-end gap-2">
+                            <a asp-action="Clientes" class="btn btn-outline-secondary px-4">Cancelar</a>
+                            <button type="submit" class="btn btn-primary px-4" style="background-color: #1E88E5; border: none;">Guardar Cambios</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

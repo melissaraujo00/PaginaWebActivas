@@ -1,0 +1,133 @@
+﻿@model AppWeb2.Models.ReporteVentasPdfViewModel
+@{
+    Layout = null;
+    string azulPrimario = "#1E88E5";
+    string azulFondoClaro = "#E3F2FD";
+    string azulBorde = "#1565C0";
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@Model.TituloReporte</title>
+    <style>
+        .contenedor { width: 100%; margin: auto; }
+        body { font-family: 'Segoe UI', Arial, sans-serif; padding: 20px; color: #333; }
+        
+        .header-table { width: 100%; border-bottom: 3px solid @azulPrimario; margin-bottom: 20px; padding-bottom: 10px; }
+        p { margin: 0px; }
+        .nombre-empresa { color: @azulPrimario; font-weight: bold; font-size: 18px; }
+        .info-empresa { font-size: 13px; color: #555; line-height: 1.4; }
+        .title-main { font-size: 24px; font-weight: bold; color: @azulPrimario; text-align: right; }
+        .fecha-emision { font-size: 13px; color: #858585; text-align: right; }
+
+        .filtros-box { 
+            background-color: @azulFondoClaro; 
+            padding: 12px; 
+            border-left: 6px solid @azulPrimario; 
+            border-radius: 4px;
+            margin-bottom: 20px;
+        }
+        .filtros-titulo { font-weight: bold; color: @azulBorde; font-size: 12px; text-transform: uppercase; }
+
+
+        table.tbproductos { width: 100%; border-collapse: collapse; margin-top: 10px; }
+        table.tbproductos thead tr th { 
+            background-color: @azulPrimario; 
+            color: white; 
+            padding: 12px; 
+            font-size: 14px; 
+            text-align: left;
+            border: 1px solid @azulBorde;
+        }
+        table.tbproductos tbody tr td { padding: 10px; border-bottom: 1px solid #E0E0E0; font-size: 13px; }
+        .item-resaltado { font-weight: bold; color: @azulBorde; }
+        .bg-detalle { background-color: @azulFondoClaro; font-weight: bold; }
+
+        .total-box { 
+            background-color: @azulPrimario; 
+            color: white; 
+            font-weight: bold; 
+            padding: 10px; 
+            text-align: center; 
+            font-size: 16px;
+            border-radius: 4px;
+        }
+        .total-label { text-align: right; font-weight: bold; color: @azulBorde; padding-right: 15px; font-size: 16px; }
+    </style>
+</head>
+<body>
+
+    <div class="contenedor">
+        <table class="header-table">
+            <tr>
+                <td style="width: 20%;">
+                    <img src="~/img/logo_gamestore.jpg" style="width: 160px;" />
+                </td>
+                <td style="width: 40%;" class="info-empresa">
+                    <p class="nombre-empresa">@Model.NombreEmpresa</p>
+                    <p>@Model.DescripcionEmpresa</p>
+                    <p>@Model.DireccionEmpresa</p>
+                    <p>Email: @Model.CorreoEmpresa</p>
+                </td>
+                <td style="width: 40%;">
+                    <p class="title-main">@Model.TituloReporte</p>
+                    <p class="fecha-emision">Fecha Reporte: @DateTime.Now.ToString("dd/MM/yyyy")</p>
+                </td>
+            </tr>
+        </table>
+
+        <div class="filtros-box">
+            <p class="filtros-titulo">Criterios de búsqueda aplicados</p>
+            <p style="font-size: 13px;">
+                @if (!string.IsNullOrEmpty(Model.Filtros.Desde)) { 
+                    <span><strong>Rango:</strong> @Model.Filtros.Desde al @Model.Filtros.Hasta &nbsp;|&nbsp; </span> 
+                }
+                @if (!string.IsNullOrEmpty(Model.Filtros.SearchString)) { 
+                    <span><strong>Cliente:</strong> "@Model.Filtros.SearchString" &nbsp;|&nbsp; </span> 
+                }
+                @if (!string.IsNullOrEmpty(Model.Filtros.Estado)) { 
+                    <span><strong>Estado:</strong> @Model.Filtros.Estado</span> 
+                }
+                @if (string.IsNullOrEmpty(Model.Filtros.Desde) && string.IsNullOrEmpty(Model.Filtros.SearchString) && string.IsNullOrEmpty(Model.Filtros.Estado)) {
+                    <span>Sin filtros (Historial completo)</span>
+                }
+            </p>
+        </div>
+
+        <table class="tbproductos">
+            <thead>
+                <tr>
+                    <th>Código</th>
+                    <th>Videojuego</th>
+                    <th>Cliente</th>
+                    <th style="width:80px; text-align: center;">Cant.</th>
+                    <th style="width:120px; text-align: right;">Total</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model.Ventas)
+                {
+                    <tr>
+                        <td>@item.codigoTransaccion</td>
+                        <td class="item-resaltado">@item.TituloJuego</td>
+                        <td>@item.clienteNombre</td>
+                        <td style="text-align: center;">@item.cantidad</td>
+                        <td class="bg-detalle" style="text-align: right;">$@item.total.ToString("N2")</td>
+                    </tr>
+                }
+            </tbody>
+            <tfoot>
+                <tr><td colspan="5" style="height: 20px;"></td></tr>
+                <tr>
+                    <td colspan="3"></td>
+                    <td class="total-label">TOTAL:</td>
+                    <td class="total-box">$@Model.Ventas.Sum(v => v.total).ToString("N2")</td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+
+</body>
+</html>

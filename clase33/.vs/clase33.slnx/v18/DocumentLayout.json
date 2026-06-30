@@ -1,0 +1,302 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\dalia\\source\\repos\\clase33\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{50936A0C-78F1-5019-278C-C68AD20CE845}|clase33.csproj|c:\\users\\dalia\\source\\repos\\clase33\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{50936A0C-78F1-5019-278C-C68AD20CE845}|clase33.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{182B3B37-DD14-708D-B85E-85B6E10C6351}|..\\Aplication\\Aplication.csproj|c:\\users\\dalia\\source\\repos\\aplication\\services\\usuarioservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{96DAE689-B394-7216-D112-A98E9459722E}|..\\Infrastruture\\Infrastruture.csproj|c:\\users\\dalia\\source\\repos\\infrastruture\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{50936A0C-78F1-5019-278C-C68AD20CE845}|clase33.csproj|c:\\users\\dalia\\source\\repos\\clase33\\controllers\\usuariocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{50936A0C-78F1-5019-278C-C68AD20CE845}|clase33.csproj|solutionrelative:controllers\\usuariocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{50936A0C-78F1-5019-278C-C68AD20CE845}|clase33.csproj|c:\\users\\dalia\\source\\repos\\clase33\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{50936A0C-78F1-5019-278C-C68AD20CE845}|clase33.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{96DAE689-B394-7216-D112-A98E9459722E}|..\\Infrastruture\\Infrastruture.csproj|c:\\users\\dalia\\source\\repos\\infrastruture\\repositories\\usuariorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BD7B10F8-2DE7-9396-FA30-277B06B51886}|..\\Domian\\Domian.csproj|c:\\users\\dalia\\source\\repos\\domian\\entities\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{182B3B37-DD14-708D-B85E-85B6E10C6351}|..\\Aplication\\Aplication.csproj|c:\\users\\dalia\\source\\repos\\aplication\\aplication.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BD7B10F8-2DE7-9396-FA30-277B06B51886}|..\\Domian\\Domian.csproj|c:\\users\\dalia\\source\\repos\\domian\\interfaces\\iusuariorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{182B3B37-DD14-708D-B85E-85B6E10C6351}|..\\Aplication\\Aplication.csproj|c:\\users\\dalia\\source\\repos\\aplication\\dtos\\usuariodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{96DAE689-B394-7216-D112-A98E9459722E}|..\\Infrastruture\\Infrastruture.csproj|c:\\users\\dalia\\source\\repos\\infrastruture\\infrastruture.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{50936A0C-78F1-5019-278C-C68AD20CE845}|clase33.csproj|c:\\users\\dalia\\source\\repos\\clase33\\clase33.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{50936A0C-78F1-5019-278C-C68AD20CE845}|clase33.csproj|solutionrelative:clase33.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BD7B10F8-2DE7-9396-FA30-277B06B51886}|..\\Domian\\Domian.csproj|c:\\users\\dalia\\source\\repos\\domian\\domian.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{96DAE689-B394-7216-D112-A98E9459722E}|..\\Infrastruture\\Infrastruture.csproj|c:\\users\\dalia\\source\\repos\\infrastruture\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{182B3B37-DD14-708D-B85E-85B6E10C6351}|..\\Aplication\\Aplication.csproj|c:\\users\\dalia\\source\\repos\\aplication\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BD7B10F8-2DE7-9396-FA30-277B06B51886}|..\\Domian\\Domian.csproj|c:\\users\\dalia\\source\\repos\\domian\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 5,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{7cc9e714-2774-4fc6-8631-a07eee703286}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "UsuarioController.cs",
+              "DocumentMoniker": "C:\\Users\\dalia\\source\\repos\\clase33\\Controllers\\UsuarioController.cs",
+              "RelativeDocumentMoniker": "Controllers\\UsuarioController.cs",
+              "ToolTip": "C:\\Users\\dalia\\source\\repos\\clase33\\Controllers\\UsuarioController.cs",
+              "RelativeToolTip": "Controllers\\UsuarioController.cs",
+              "ViewState": "AgIAABcAAAAAAAAAAAAIwB4AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-26T17:43:48.568Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\dalia\\source\\repos\\clase33\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "C:\\Users\\dalia\\source\\repos\\clase33\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-05-26T17:22:23.573Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\dalia\\source\\repos\\clase33\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\dalia\\source\\repos\\clase33\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAAUwB4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-26T17:20:42.94Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "UsuarioRepository.cs",
+              "DocumentMoniker": "C:\\Users\\dalia\\source\\repos\\Infrastruture\\Repositories\\UsuarioRepository.cs",
+              "RelativeDocumentMoniker": "..\\Infrastruture\\Repositories\\UsuarioRepository.cs",
+              "ToolTip": "C:\\Users\\dalia\\source\\repos\\Infrastruture\\Repositories\\UsuarioRepository.cs",
+              "RelativeToolTip": "..\\Infrastruture\\Repositories\\UsuarioRepository.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAkwCAAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-26T17:15:48.696Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AppDBContext.cs",
+              "DocumentMoniker": "C:\\Users\\dalia\\source\\repos\\Infrastruture\\Data\\AppDBContext.cs",
+              "RelativeDocumentMoniker": "..\\Infrastruture\\Data\\AppDBContext.cs",
+              "ToolTip": "C:\\Users\\dalia\\source\\repos\\Infrastruture\\Data\\AppDBContext.cs",
+              "RelativeToolTip": "..\\Infrastruture\\Data\\AppDBContext.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-26T17:10:13.544Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Usuario.cs",
+              "DocumentMoniker": "C:\\Users\\dalia\\source\\repos\\Domian\\Entities\\Usuario.cs",
+              "RelativeDocumentMoniker": "..\\Domian\\Entities\\Usuario.cs",
+              "ToolTip": "C:\\Users\\dalia\\source\\repos\\Domian\\Entities\\Usuario.cs",
+              "RelativeToolTip": "..\\Domian\\Entities\\Usuario.cs",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAQwAgAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-26T16:56:47.053Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "UsuarioService.cs",
+              "DocumentMoniker": "C:\\Users\\dalia\\source\\repos\\Aplication\\Services\\UsuarioService.cs",
+              "RelativeDocumentMoniker": "..\\Aplication\\Services\\UsuarioService.cs",
+              "ToolTip": "C:\\Users\\dalia\\source\\repos\\Aplication\\Services\\UsuarioService.cs",
+              "RelativeToolTip": "..\\Aplication\\Services\\UsuarioService.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAAABoAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-26T17:03:10.953Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Aplication.csproj",
+              "DocumentMoniker": "C:\\Users\\dalia\\source\\repos\\Aplication\\Aplication.csproj",
+              "RelativeDocumentMoniker": "..\\Aplication\\Aplication.csproj",
+              "ToolTip": "C:\\Users\\dalia\\source\\repos\\Aplication\\Aplication.csproj",
+              "RelativeToolTip": "..\\Aplication\\Aplication.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-05-26T17:02:46.549Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "IUsuarioRepository.cs",
+              "DocumentMoniker": "C:\\Users\\dalia\\source\\repos\\Domian\\Interfaces\\IUsuarioRepository.cs",
+              "RelativeDocumentMoniker": "..\\Domian\\Interfaces\\IUsuarioRepository.cs",
+              "ToolTip": "C:\\Users\\dalia\\source\\repos\\Domian\\Interfaces\\IUsuarioRepository.cs",
+              "RelativeToolTip": "..\\Domian\\Interfaces\\IUsuarioRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-26T16:58:27.205Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "UsuarioDTO.cs",
+              "DocumentMoniker": "C:\\Users\\dalia\\source\\repos\\Aplication\\DTOs\\UsuarioDTO.cs",
+              "RelativeDocumentMoniker": "..\\Aplication\\DTOs\\UsuarioDTO.cs",
+              "ToolTip": "C:\\Users\\dalia\\source\\repos\\Aplication\\DTOs\\UsuarioDTO.cs",
+              "RelativeToolTip": "..\\Aplication\\DTOs\\UsuarioDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-26T16:59:59.61Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Infrastruture.csproj",
+              "DocumentMoniker": "C:\\Users\\dalia\\source\\repos\\Infrastruture\\Infrastruture.csproj",
+              "RelativeDocumentMoniker": "..\\Infrastruture\\Infrastruture.csproj",
+              "ToolTip": "C:\\Users\\dalia\\source\\repos\\Infrastruture\\Infrastruture.csproj",
+              "RelativeToolTip": "..\\Infrastruture\\Infrastruture.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-05-26T16:52:38.22Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "clase33.csproj",
+              "DocumentMoniker": "C:\\Users\\dalia\\source\\repos\\clase33\\clase33.csproj",
+              "RelativeDocumentMoniker": "clase33.csproj",
+              "ToolTip": "C:\\Users\\dalia\\source\\repos\\clase33\\clase33.csproj",
+              "RelativeToolTip": "clase33.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-05-26T16:54:29.143Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Domian.csproj",
+              "DocumentMoniker": "C:\\Users\\dalia\\source\\repos\\Domian\\Domian.csproj",
+              "RelativeDocumentMoniker": "..\\Domian\\Domian.csproj",
+              "ToolTip": "C:\\Users\\dalia\\source\\repos\\Domian\\Domian.csproj",
+              "RelativeToolTip": "..\\Domian\\Domian.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-05-26T16:53:51.256Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Class1.cs",
+              "DocumentMoniker": "C:\\Users\\dalia\\source\\repos\\Infrastruture\\Class1.cs",
+              "RelativeDocumentMoniker": "..\\Infrastruture\\Class1.cs",
+              "ToolTip": "C:\\Users\\dalia\\source\\repos\\Infrastruture\\Class1.cs",
+              "RelativeToolTip": "..\\Infrastruture\\Class1.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-26T16:50:09.054Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Class1.cs",
+              "DocumentMoniker": "C:\\Users\\dalia\\source\\repos\\Aplication\\Class1.cs",
+              "RelativeDocumentMoniker": "..\\Aplication\\Class1.cs",
+              "ToolTip": "C:\\Users\\dalia\\source\\repos\\Aplication\\Class1.cs",
+              "RelativeToolTip": "..\\Aplication\\Class1.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-26T16:48:53.276Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Class1.cs",
+              "DocumentMoniker": "C:\\Users\\dalia\\source\\repos\\Domian\\Class1.cs",
+              "RelativeDocumentMoniker": "..\\Domian\\Class1.cs",
+              "ToolTip": "C:\\Users\\dalia\\source\\repos\\Domian\\Class1.cs",
+              "RelativeToolTip": "..\\Domian\\Class1.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-26T16:48:18.598Z",
+              "EditorCaption": ""
+            }
+          ]
+        },
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

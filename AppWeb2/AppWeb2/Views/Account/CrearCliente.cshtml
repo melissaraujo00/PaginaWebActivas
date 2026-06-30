@@ -1,0 +1,67 @@
+﻿@model AppWeb2.Models.ClienteAdminViewModel
+@{
+    ViewData["Title"] = "Crear Nuevo Cliente";
+}
+
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="card shadow-sm border-0">
+                <div class="card-header text-white d-flex justify-content-between align-items-center" style="background-color: #1E88E5;">
+                    <h4 class="mb-0"><i class="fas fa-user-plus me-2"></i>Crear Nuevo Cliente</h4>
+                    <a asp-action="Clientes" class="btn btn-sm btn-light text-primary fw-bold">Volver a la lista</a>
+                </div>
+                <div class="card-body p-4">
+                    
+                    @if (ViewBag.Error != null)
+                    {
+                        <div class="alert alert-danger">
+                            <i class="fas fa-exclamation-triangle me-2"></i> @ViewBag.Error
+                        </div>
+                    }
+
+                    <form asp-action="CrearCliente" method="post">
+                        
+                        <div class="row mb-3">
+                            <div class="col-md-6">
+                                <label class="form-label fw-bold">Nombre Completo</label>
+                                <input asp-for="Nombre" class="form-control" placeholder="Ej. Juan Pérez" />
+                                <span asp-validation-for="Nombre" class="text-danger small"></span>
+                            </div>
+                            <div class="col-md-6">
+                                <label class="form-label fw-bold">Correo Electrónico</label>
+                                <input asp-for="Email" type="email" class="form-control" placeholder="usuario@correo.com" />
+                                <span asp-validation-for="Email" class="text-danger small"></span>
+                            </div>
+                        </div>
+
+                        <div class="alert alert-warning mt-4 mb-3" role="alert">
+                            <i class="fas fa-key me-2"></i> <strong>Importante:</strong> Debes asignar una contraseña inicial para que el cliente pueda acceder. El cliente podrá cambiarla después desde su perfil.
+                        </div>
+
+                        <div class="row mb-4">
+                            <div class="col-md-12">
+                                <label class="form-label fw-bold">Contraseña Inicial</label>
+                                <input asp-for="Password" type="password" class="form-control" placeholder="Mínimo 6 caracteres" />
+                                <span asp-validation-for="Password" class="text-danger small"></span>
+                            </div>
+                        </div>
+
+                        <div class="d-flex justify-content-end gap-2">
+                            <a asp-action="Clientes" class="btn btn-outline-secondary px-4">Cancelar</a>
+                            <button type="submit" class="btn btn-success px-4" style="background-color: #1E88E5; border: none;">
+                                <i class="fas fa-save me-2"></i> Crear Cliente
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

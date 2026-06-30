@@ -10,21 +10,24 @@ namespace AppWeb2.Data
         {
         }
         public DbSet<Categoria> Categorias { get; set; }
+        public DbSet<Rol> Roles { get; set; }
         public DbSet<Usuario> Usuarios { get; set; }
         public DbSet<VideoJuego> VideoJuegos { get; set; }
         public DbSet<Compra> Compras { get; set; }
+        public DbSet<DetalleCompra> DetalleCompras { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
-            // Configuración adicional si es necesario
             modelBuilder.Entity<Usuario>()
                 .HasIndex(u => u.Email)
+
                 .IsUnique();
             modelBuilder.Entity<VideoJuego>()
                 .HasOne(v => v.Categoria)
                 .WithMany(c => c.VideoJuegos)
                 .HasForeignKey(v => v.CategoriaId);
+
 
 
 

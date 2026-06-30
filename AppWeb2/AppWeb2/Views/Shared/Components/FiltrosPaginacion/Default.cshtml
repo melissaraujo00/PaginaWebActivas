@@ -1,0 +1,67 @@
+﻿@model AppWeb2.Models.FiltrosPaginacionViewModel
+
+<div class="card mb-4 shadow-sm">
+    <div class="card-body">
+        <form method="get" asp-controller="@Model.Controller" asp-action="@Model.Action" class="row g-3 align-items-end">
+            <div class="col-md-2">
+                <label class="form-label text-muted small">DESDE</label>
+                <input type="date" name="desde" class="form-control" value="@Model.Desde" />
+            </div>
+            
+            <div class="col-md-2">
+                <label class="form-label text-muted small">HASTA</label>
+                <input type="date" name="hasta" class="form-control" value="@Model.Hasta" />
+            </div>
+            
+            <div class="@(Model.MostrarEstado ? "col-md-3" : "col-md-5")">
+                <label class="form-label text-muted small">@Model.LabelSearch</label>
+                <input type="text" name="searchString" class="form-control" placeholder="Buscar..." value="@Model.SearchString" />
+            </div>
+
+            @if (Model.MostrarEstado)
+            {
+                <div class="col-md-3">
+                    <label class="form-label text-muted small">ESTADO</label>
+                    <select name="estado" class="form-select">
+                        <option value="">Todos</option>
+                        <!option value="Completado" @(Model.Estado == "Completado" ? "selected" : "")>Completado</!option>
+                        <!option value="Pendiente" @(Model.Estado == "Pendiente" ? "selected" : "")>Pendiente</!option>
+                        <!option value="Cancelado" @(Model.Estado == "Cancelado" ? "selected" : "")>Cancelado</!option>
+                    </select>
+                </div>
+            }
+
+            <div class="col-md-5 d-flex gap-2">
+                <button type="submit" class="btn btn-accent flex-grow-1">
+                    Filtrar
+                </button>
+    
+                <button type="submit"
+                        asp-controller="@Model.Controller"
+                        asp-action="@(Model.Action + "Pdf")"
+                        formtarget="_blank"
+                        class="btn btn-danger">
+                    <i class="bi bi-file-earmark-pdf"></i> PDF
+                </button>
+
+                <a asp-controller="@Model.Controller" asp-action="@Model.Action" class="btn btn-outline-secondary">Limpiar</a>
+            </div>
+        </form>
+    </div>
+</div>
+
+@if (Model.TotalPaginas > 1)
+{
+    <nav aria-label="Page navigation" class="mt-4">
+        <ul class="pagination justify-content-center">
+            @for (int i = 1; i <= Model.TotalPaginas; i++)
+            {
+                <li class="page-item @(i == Model.PaginaActual ? "active" : "")">
+                    <a class="page-link" href="?pagina=@i&desde=@Model.Desde&hasta=@Model.Hasta&searchString=@Model.SearchString&estado=@Model.Estado">
+                        @i
+                    </a>
+                </li>
+            }
+        </ul>
+    </nav>
+}

@@ -35,6 +35,11 @@ namespace AppWeb2.Controllers
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
         }
 
+        public IActionResult AccessDenied()
+        {
+            return View();
+        }
+
         public IActionResult Calcular(Notas model)
         {
             model.promedio = (model.n1 + model.n2 + model.n3) / 3;

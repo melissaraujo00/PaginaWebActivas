@@ -37,7 +37,5 @@ namespace AppWeb2.Models
 
         public DateTime FechaRegistro { get; set; } = DateTime.Now;
 
-
-        //public ICollection<Compra> Compras { get; set; }
     }
 }

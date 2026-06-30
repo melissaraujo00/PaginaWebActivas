@@ -1,91 +1,177 @@
 ﻿@{
-    Layout = null;
+    ViewData["Title"] = "Dashboard Administrativo";
     var usuario = Context.Session.GetString("usuario");
 }
-
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="utf-8" />
-    <title>Dashboard</title>
-
-
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
-
-    <style>
-        body {
-            background-color: #f5f7fb;
-        }
-
-        .navbar-custom {
-            background: linear-gradient(90deg, #1e3c72, #2a5298);
-        }
-
-        .navbar-brand {
-            font-weight: bold;
-            color: white !important;
-        }
-
-        .user-info {
-            color: white;
-            font-weight: 500;
-        }
-
-        .btn-logout {
-            border-radius: 10px;
-        }
-
-        .dashboard-container {
-            padding: 30px;
-        }
-
-        .card-placeholder {
-            height: 250px;
-            border-radius: 15px;
-            border: 2px dashed #ccc;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: #999;
-            font-weight: 500;
-            background: white;
-        }
-
-        .welcome-box {
-            background: white;
-            padding: 20px;
-            border-radius: 15px;
-            margin-bottom: 20px;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
-        }
-    </style>
-</head>
-<body>
-
-
-    <nav class="navbar navbar-expand-lg navbar-custom px-4">
-        <a class="navbar-brand" href="#">Administración de sistema</a>
-
-        <div class="ms-auto d-flex align-items-center gap-3">
-            <span class="user-info">
-                👤 @usuario
-            </span>
-
-            <a asp-controller="Account" asp-action="Logout" class="btn btn-light btn-sm btn-logout">
-                Cerrar Sesión
-            </a>
-        </div>
-    </nav>
-    <div class="dashboard-container">
-
-
-        <div class="welcome-box">
-            <h4>Bienvenido, @usuario 👋</h4>
-            <p class="text-muted mb-0">
-                Este es tu panel principal. Aquí podrás visualizar estadísticas y gestionar el sistema.
-            </p>
+<div class="row">
+        <div class="col-md-6 mb-4">
+            <div class="card shadow-sm border-0 h-100">
+                <div class="card-header bg-white d-flex justify-content-between align-items-center border-0 pb-0">
+                    <h6 class="m-0 text-muted" style="font-size: 14px;">Filtrar Top 5 por Categoría:</h6>
+                    <select id="selectCategoria" class="form-select form-select-sm" style="width: 200px;">
+                        <option value="0">Todas las categorías</option>
+                    </select>
+                </div>
+                <div class="card-body pt-2">
+                    <div id="container" class="chart-container" style="height: 330px;"></div>
+                </div>
+            </div>
+    </div>
+    
+    <div class="col-md-6 mb-4">
+        <div class="card shadow-sm border-0 h-100">
+            <div class="card-body">
+                <div id="containerEstados" class="chart-container" style="height: 350px;"></div>
+            </div>
         </div>
     </div>
 
-</body>
-</html>
+    <div class="col-md-6 mb-4">
+        <div class="card shadow-sm border-0 h-100">
+            <div class="card-body">
+                <div id="containerPie" class="chart-container" style="height: 350px;"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-6 mb-4">
+        <div class="card shadow-sm border-0 h-100">
+            <div class="card-body">
+                <div id="containerLine" class="chart-container" style="height: 350px;"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script src="https://code.highcharts.com/modules/exporting.js"></script>
+    <script src="https://code.highcharts.com/modules/export-data.js"></script>
+    <script src="https://code.highcharts.com/modules/accessibility.js"></script>
+
+    <script>
+            $(document).ready(function () {
+
+            actualizarDash();
+
+            $.get('/Account/GetCategorias', function (data) {
+            data.forEach(function (cat) {
+            $('#selectCategoria').append(new Option(cat.nombre, cat.id));
+            });
+            });
+
+            $('#selectCategoria').change(function () {
+            let catId = $(this).val();
+
+            if (catId == 0) {
+ 
+            actualizarDash();
+            } else {
+
+            $.get('/Account/ObtenerVentasPorCategoria?categoriaId=' + catId, function (ventasFiltradas) {
+
+            let chart = $('#container').highcharts();
+                
+
+            chart.xAxis[0].setCategories(ventasFiltradas.map(x => x.nombre));
+                
+
+            chart.series[0].setData(ventasFiltradas.map(x => x.cantidad));
+
+            chart.setTitle(null, { text: 'Filtrado por categoría seleccionada' });
+            }).fail(function () {
+            alert("Error al aplicar el filtro de categoría.");
+            });
+            }
+            });
+            });
+
+            function actualizarDash() {
+            $.get('/Account/ObtenerDatosDashboard', function (data) {
+        
+            Highcharts.chart('container', {
+            chart: { type: 'column' },
+            title: { text: 'Top 5 Videojuegos Más Vendidos' },
+            subtitle: { text: 'Estado: Completado (Todas las categorías)' },
+            xAxis: {
+            categories: data.ventas.map(x => x.nombre),
+            crosshair: true
+            },
+            yAxis: { title: { text: 'Unidades Vendidas' } },
+            series: [{
+            name: 'Unidades',
+            data: data.ventas.map(x => x.cantidad),
+            color: '#1E88E5' 
+            }]
+            });
+
+            Highcharts.chart('containerEstados', {
+            chart: { type: 'pie' },
+            title: { text: 'Estado General de Transacciones' },
+            tooltip: { pointFormat: '{series.name}: <b>{point.y}</b>' },
+            plotOptions: {
+            pie: {
+            innerSize: '60%',
+            allowPointSelect: true,
+            cursor: 'pointer',
+            dataLabels: {
+            enabled: true,
+            format: '<b>{point.name}</b>: {point.percentage:.1f} %'
+            }
+            }
+            },
+            series: [{
+            name: 'Total',
+            colorByPoint: true,
+            data: data.estados.map(x => {
+            let colorEstado;
+            if (x.estado === 'Completado') colorEstado = '#28a745';
+            else if (x.estado === 'Pendiente') colorEstado = '#ffc107';
+            else if (x.estado === 'Cancelado') colorEstado = '#dc3545';
+                    
+            return { name: x.estado, y: x.total, color: colorEstado };
+            })
+            }]
+            });
+
+            Highcharts.chart('containerPie', {
+            chart: { type: 'pie' },
+            title: { text: 'Distribución de Juegos por Categoría' },
+            tooltip: { pointFormat: '{series.name}: <b>{point.y}</b>' },
+            plotOptions: {
+            pie: {
+            allowPointSelect: true,
+            cursor: 'pointer',
+            dataLabels: { enabled: true, format: '<b>{point.name}</b>: {point.y}' }
+            }
+            },
+            series: [{
+            name: 'Títulos',
+            colorByPoint: true,
+            data: data.categorias.map(x => ({ name: x.categoria, y: x.total }))
+            }]
+            });
+
+            Highcharts.chart('containerLine', {
+            chart: { type: 'bar' },
+            title: { text: 'Comparativa de Usuarios por Rol' },
+            xAxis: { categories: data.usuarios.map(x => x.rol), title: { text: null }, lineWidth: 0 },
+            yAxis: { min: 0, title: { text: 'Cantidad de Usuarios' }, allowDecimals: false, gridLineWidth: 1 },
+            plotOptions: {
+            bar: {
+            dataLabels: { enabled: true, style: { fontWeight: 'bold' } },
+            colorByPoint: true,
+            borderRadius: 4
+            }
+            },
+            legend: { enabled: false },
+            series: [{ name: 'Usuarios', data: data.usuarios.map(x => x.total) }]
+            });
+
+            }).fail(function (error) {
+            console.error("Error al cargar los datos del dashboard:", error);
+            alert("No se pudieron cargar las estadísticas.");
+            });
+            }
+    </script>
+}
